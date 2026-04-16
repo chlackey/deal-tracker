@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)file:///C:/Users/chlackey/Downloads/index.html#/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deal Advisory — Project Portfolio | Deloitte</title>
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+:root{--dl-green:#86BC25;--dl-neon:#86EB22;--dl-blue:#00A3E0;--dl-dark:#282728;--dl-gray:#E6E6E6;--dl-light:#F5F5F5;--dl-white:#FFFFFF;--dl-text:#282728;--dl-muted:#555555;--dl-border:#E6E6E6;--dl-amber:#E8A317;--dl-red:#DA291C}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden}
+body{background:var(--dl-light);color:var(--dl-text);font-family:'Open Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.6;display:flex;flex-direction:column}
+.shell-header{background:var(--dl-dark);border-top:4px solid var(--dl-green);flex-shrink:0;z-index:200;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+.shell-inner{max-width:1600px;margin:0 auto;padding:0 40px;height:60px;display:flex;align-items:center;gap:20px}
+.wm{font-size:22px;font-weight:700;color:var(--dl-white);letter-spacing:-0.02em;border-right:1px solid rgba(255,255,255,0.18);padding-right:20px;white-space:nowrap}
+.wm span{display:inline-block;width:9px;height:9px;background:var(--dl-green);border-radius:50%;margin-left:1px;vertical-align:middle;position:relative;top:-2px}
+.shell-title{font-size:14px;font-weight:700;color:var(--dl-white)}
+.shell-sub{font-size:11px;color:rgba(255,255,255,0.45)}
+.nav-bar{background:var(--dl-dark);border-bottom:1px solid rgba(255,255,255,0.08);flex-shrink:0;display:flex;align-items:flex-end;padding:0 40px;gap:0;overflow-x:auto}
+.nav-tab{font-size:12px;font-weight:700;letter-spacing:0.04em;padding:11px 18px;cursor:pointer;color:rgba(255,255,255,0.45);border-bottom:3px solid transparent;transition:color 0.15s,border-color 0.15s;user-select:none;white-space:nowrap;display:flex;align-items:center;gap:8px;text-decoration:none}
+.nav-tab:hover{color:rgba(255,255,255,0.8)}
+.nav-tab.active{color:var(--dl-white);border-bottom-color:var(--dl-green)}
+.nav-badge{font-size:9px;font-weight:700;background:rgba(134,188,37,0.2);color:var(--dl-neon);border:1px solid rgba(134,188,37,0.3);padding:1px 6px;border-radius:10px;letter-spacing:0.05em}
+.nav-sep{width:1px;height:20px;background:rgba(255,255,255,0.1);margin:auto 4px}
+.view-container{flex:1;overflow:hidden;position:relative}
+.view{position:absolute;inset:0;overflow-y:auto;transition:opacity 0.15s,transform 0.15s}
+.view.hidden{opacity:0;pointer-events:none;transform:translateY(4px)}
+.project-view .page{max-width:1500px;margin:0 auto;padding:28px 40px 48px}
+/* Portfolio */
+.summary-page{padding:32px 40px 48px;max-width:1600px;margin:0 auto}
+.page-heading{margin-bottom:28px}
+.page-heading h1{font-size:22px;font-weight:300;color:var(--dl-text);margin-bottom:4px}
+.page-heading h1 em{font-style:italic;color:var(--dl-green);font-weight:700}
+.page-heading p{font-size:13px;color:var(--dl-muted)}
+.port-metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:32px}
+.pm{background:var(--dl-white);border:1px solid var(--dl-border);border-top:3px solid var(--dl-green);padding:16px 18px;border-radius:0 0 3px 3px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.pm:nth-child(2){border-top-color:var(--dl-blue)} .pm:nth-child(3){border-top-color:var(--dl-dark)} .pm:nth-child(4){border-top-color:var(--dl-amber)} .pm:nth-child(5){border-top-color:#9B59B6}
+.pm-label{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--dl-muted);margin-bottom:7px}
+.pm-value{font-size:26px;font-weight:300;color:var(--dl-text);line-height:1;margin-bottom:4px}
+.pm-sub{font-size:11px;color:var(--dl-muted)}
+.client-group{margin-bottom:32px}
+.client-header{display:flex;align-items:center;gap:14px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--dl-green)}
+.client-logo{width:38px;height:38px;background:var(--dl-dark);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--dl-white);flex-shrink:0}
+.client-name{font-size:16px;font-weight:700;color:var(--dl-text)} .client-sub{font-size:11px;color:var(--dl-muted)}
+.project-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:16px}
+.project-card{background:var(--dl-white);border:1px solid var(--dl-border);border-radius:4px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,0.06);cursor:pointer;transition:box-shadow 0.2s,border-color 0.2s,transform 0.15s;display:flex;flex-direction:column;text-decoration:none;color:inherit}
+.project-card:hover{box-shadow:0 6px 20px rgba(0,0,0,0.12);border-color:#A8CC70;transform:translateY(-1px)}
+.card-top{padding:16px 18px 12px;border-bottom:1px solid var(--dl-border);display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.card-project{font-size:16px;font-weight:700;color:var(--dl-text);margin-bottom:3px} .card-wbs{font-size:10px;color:var(--dl-muted);letter-spacing:0.05em;font-family:monospace}
+.status-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 9px;border-radius:10px}
+.status-invoiced{background:#E6F4D6;color:#2E6B00;border:1px solid #86BC25} .status-wip{background:#FFF4E0;color:#7A4500;border:1px solid #E8A317}
+.card-body{padding:14px 18px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;flex:1}
+.card-stat{display:flex;flex-direction:column;gap:2px}
+.cs-label{font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--dl-muted)}
+.cs-value{font-size:16px;font-weight:300;color:var(--dl-text)} .cs-sub{font-size:10px;color:var(--dl-muted)}
+.inv-highlight{background:var(--dl-dark);margin:0 18px 14px;border-radius:3px;padding:10px 14px;display:flex;gap:24px;flex-wrap:wrap;border-left:3px solid var(--dl-green)}
+.ih-stat{display:flex;flex-direction:column;gap:1px}
+.ih-lbl{font-size:9px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.ih-val{font-size:15px;font-weight:700;color:var(--dl-white)} .ih-val.gn{color:var(--dl-neon)}
+.card-footer{padding:10px 18px;background:#FAFAFA;border-top:1px solid var(--dl-border);display:flex;align-items:center;justify-content:space-between}
+.card-ws{display:flex;gap:5px;flex-wrap:wrap}
+.ws-chip{font-size:9px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:2px 7px;border-radius:10px;border:1px solid currentColor}
+.chip-fdd{color:#005587;background:#E6F4FB} .chip-tax{color:#7A4500;background:#FDF0E0} .chip-cpdd{color:#7A1919;background:#FAEAEA} .chip-odd{color:#3A5C00;background:#EEF6D6} .chip-hrdd{color:#4A2080;background:#F0EAFA} .chip-nb{color:#555;background:#F0F0F0}
+.card-cta{font-size:11px;font-weight:700;color:var(--dl-green);display:flex;align-items:center;gap:4px;white-space:nowrap}
+.card-cta::after{content:'→';font-size:14px}
+/* Project tracker (superset CSS) */
+:root {
+    --dl-green:#86BC25; --dl-neon:#86EB22; --dl-blue:#00A3E0;
+    --dl-dark:#282728; --dl-gray:#E6E6E6; --dl-light:#F5F5F5;
+    --dl-white:#FFFFFF; --dl-text:#282728; --dl-muted:#555555;
+    --dl-border:#E6E6E6; --dl-amber:#E8A317; --dl-red:#DA291C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--dl-light);color:var(--dl-text);font-family:'Open Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.6;min-height:100vh}
+
+  header{background:var(--dl-dark);border-top:4px solid var(--dl-green);position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.18)}
+  .hi{max-width:1500px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .hl{display:flex;align-items:center;gap:20px}
+  .wm{font-size:22px;font-weight:700;color:var(--dl-white);letter-spacing:-0.02em;border-right:1px solid rgba(255,255,255,0.18);padding-right:20px}
+  .wm span{display:inline-block;width:9px;height:9px;background:var(--dl-green);border-radius:50%;margin-left:1px;vertical-align:middle;position:relative;top:-2px}
+  .ht{font-size:15px;font-weight:700;color:var(--dl-white)}
+  .hs{font-size:11px;color:rgba(255,255,255,0.5)}
+  .hm{font-size:11px;color:rgba(255,255,255,0.4);text-align:right;line-height:1.5}
+
+  .page{max-width:1500px;margin:0 auto;padding:28px 40px 48px}
+
+  .controls{background:var(--dl-white);border:1px solid var(--dl-border);border-radius:3px;padding:12px 18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+  .cg{display:flex;align-items:center;gap:10px}
+  .cl{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--dl-muted);white-space:nowrap}
+  select{border:1px solid var(--dl-border);border-radius:3px;background:var(--dl-white);color:var(--dl-text);font-family:'Open Sans',sans-serif;font-size:13px;padding:5px 26px 5px 10px;cursor:pointer;outline:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23555' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center}
+  select:focus{border-color:var(--dl-green)}
+  .dv{width:1px;height:22px;background:var(--dl-border)}
+  .dw{display:flex;align-items:center;gap:12px;flex:1;min-width:180px}
+  input[type=range]{-webkit-appearance:none;appearance:none;flex:1;height:3px;background:var(--dl-gray);border-radius:2px;outline:none;cursor:pointer}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--dl-green);border:2px solid var(--dl-white);box-shadow:0 0 0 2px var(--dl-green);cursor:pointer}
+  .dval{font-size:14px;font-weight:700;color:var(--dl-green);min-width:36px;text-align:right}
+
+  /* ── Invoice banner ── */
+  .inv-banner{background:var(--dl-dark);border-left:4px solid var(--dl-green);border-radius:3px;padding:18px 22px;margin-bottom:22px;box-shadow:0 1px 4px rgba(0,0,0,0.12)}
+  .inv-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,0.1)}
+  .inv-title{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.45)}
+  .inv-totals{display:flex;gap:28px;flex-wrap:wrap}
+  .inv-tot{text-align:right}
+  .inv-tot .itl{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:2px}
+  .inv-tot .itv{font-size:20px;font-weight:300;color:var(--dl-white)}
+  .inv-tot .itv.gn{color:var(--dl-neon);font-weight:700}
+  .inv-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  .inv-ws{background:rgba(255,255,255,0.04);border-radius:3px;border:1px solid rgba(255,255,255,0.08);padding:12px 14px}
+  .inv-ws-tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:0.07em;padding:2px 7px;border-radius:2px;border:1px solid currentColor;margin-bottom:8px;text-transform:uppercase}
+  .inv-r{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3px}
+  .inv-rl{font-size:11px;color:rgba(255,255,255,0.4)}
+  .inv-rv{font-size:13px;font-weight:700;color:var(--dl-white)}
+  .inv-rv.gn{color:var(--dl-neon)} .inv-rv.rd{color:#FF8080} .inv-rv.am{color:#F5C842}
+  hr.inv-div{border:none;border-top:1px solid rgba(255,255,255,0.1);margin:6px 0}
+  .inv-disc-note{font-size:10px;color:rgba(255,255,255,0.3);text-align:right;margin-top:3px}
+  .inv-disc-note.premium{color:#F5C842}
+
+  .metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:22px}
+  .metric{background:var(--dl-white);border:1px solid var(--dl-border);border-top:3px solid var(--dl-green);padding:16px 18px;border-radius:0 0 3px 3px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+  .metric:nth-child(2){border-top-color:var(--dl-blue)}
+  .metric:nth-child(3){border-top-color:var(--dl-dark)}
+  .metric:nth-child(4){border-top-color:#9B59B6}
+  .metric:nth-child(5){border-top-color:#9B59B6}
+  .mlabel{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--dl-muted);margin-bottom:7px}
+  .mval{font-size:26px;font-weight:300;color:var(--dl-text);line-height:1;margin-bottom:4px}
+  .msub{font-size:11px;color:var(--dl-muted)}
+  .fmva-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;background:#F0EAFA;color:#4A2080;border:1px solid #9B59B6;padding:1px 5px;border-radius:2px;margin-left:6px;vertical-align:middle}
+
+  .ws-section{background:var(--dl-white);border:1px solid var(--dl-border);border-radius:3px;margin-bottom:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+  .ws-hdr{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;cursor:pointer;user-select:none;border-left:4px solid transparent;border-bottom:1px solid var(--dl-border);transition:background 0.12s,border-left-color 0.12s}
+  .ws-hdr:hover{background:#F9F9F9;border-left-color:var(--dl-green)}
+  .wsl{display:flex;align-items:center;gap:12px}
+  .ws-tag{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:3px 8px;border-radius:2px;border:1px solid currentColor}
+  .tag-fdd{color:#005587;background:#E6F4FB} .tag-cpdd{color:#7A1919;background:#FAEAEA}
+  .tag-odd{color:#3A5C00;background:#EEF6D6} .tag-hrdd{color:#4A2080;background:#F0EAFA}
+  .tag-taxd{color:#005587;background:#DFF0FA} .tag-taxm{color:#006B5C;background:#DCF5F0}
+  .tag-taxs{color:#7A4500;background:#FDF0E0} .tag-nb{color:#555555;background:#F0F0F0}
+  .ws-name{font-size:14px;font-weight:700;color:var(--dl-text)}
+  .ws-hrs{font-size:12px;color:var(--dl-muted)}
+  .wsr{display:flex;align-items:center;gap:22px}
+  .ws-stat{text-align:right}
+  .ws-stat-lbl{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--dl-muted);margin-bottom:1px}
+  .ws-stat-val{font-size:14px;font-weight:700;color:var(--dl-text)}
+  .chev{color:var(--dl-muted);font-size:11px;margin-left:6px;transition:transform 0.2s}
+  .ws-section.collapsed .chev{transform:rotate(-90deg)}
+  .ws-section.collapsed .ws-body{display:none}
+
+  .ws-body{overflow-x:auto}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  thead tr{background:var(--dl-dark)}
+  th{text-align:left;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.7);padding:9px 14px;white-space:nowrap}
+  th.r{text-align:right} th.fc{color:#D4A8FF}
+  td{padding:8px 14px;border-bottom:1px solid var(--dl-border);color:var(--dl-text);white-space:nowrap}
+  td.r{text-align:right} td.dim{color:var(--dl-muted)}
+  td.fv{color:#4A2080;font-weight:700;text-align:right}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:nth-child(even) td{background:#FAFAFA}
+  tbody tr:hover td{background:#F0F8E0!important}
+  tbody tr.tot-row td{background:var(--dl-dark)!important;color:var(--dl-white)!important;font-weight:700;border:none}
+  tbody tr.tot-row td.fv{color:#D4A8FF!important}
+
+  /* expandable rows */
+  tr.p-row{cursor:pointer}
+  tr.p-row.has-weeks td:first-child::before{content:'▶';font-size:9px;color:var(--dl-muted);margin-right:6px;display:inline-block;transition:transform 0.15s}
+  tr.p-row.has-weeks.open td:first-child::before{transform:rotate(90deg);color:var(--dl-green)}
+  tr.sub-row{cursor:pointer}
+  tr.sub-row td{border-top:1px solid #D0D0D0;font-weight:700;background:#F2F2F2!important}
+  tr.sub-row td:first-child::before{content:'▶';font-size:9px;color:var(--dl-muted);margin-right:6px;display:inline-block;transition:transform 0.15s}
+  tr.sub-row.open td:first-child::before{transform:rotate(90deg);color:var(--dl-green)}
+  tr.wk-row td{background:#F7FBF0!important;padding:5px 14px;font-size:12px;color:var(--dl-muted);border-bottom:1px solid #E8F0D8}
+  tr.wk-row td.r{text-align:right}
+  tr.wk-row td:first-child{padding-left:34px;font-style:italic}
+  tr.wks-row td{background:#EEFAE0!important;padding:5px 14px;font-size:12px;color:#3A5C00;border-bottom:1px solid #D5EDB5;font-weight:600}
+  tr.wks-row td.r{text-align:right}
+  tr.wks-row td:first-child{padding-left:28px;font-style:italic}
+
+  .badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 6px;border-radius:2px;letter-spacing:0.05em;text-transform:uppercase}
+  .bu{background:#FDF0E0;color:#7A4500;border:1px solid #E8A317}
+  .bc{background:#E6F4FB;color:#005587;border:1px solid #00A3E0}
+  .flat{font-size:9px;font-weight:700;letter-spacing:0.05em;color:var(--dl-muted);margin-left:4px}
+
+  .good{color:#3A6B00;font-weight:700} .ok{color:#5A8C00;font-weight:700}
+  .low{color:var(--dl-amber);font-weight:700} .neg{color:var(--dl-red);font-weight:700} .na{color:var(--dl-muted)}
+
+  .grand-total{background:var(--dl-dark);border-left:4px solid var(--dl-green);border-radius:3px;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-top:8px}
+  .gt-lbl{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.45)}
+  .gt-stats{display:flex;gap:26px;flex-wrap:wrap}
+  .gt-stat{text-align:right}
+  .gt-stat .l{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:2px}
+  .gt-stat .v{font-size:17px;font-weight:300;color:var(--dl-white)}
+  .gt-stat .v.good,.gt-stat .v.ok{color:var(--dl-neon);font-weight:700}
+  .gt-stat .v.low{color:#F5C842;font-weight:700} .gt-stat .v.neg{color:#FF8080;font-weight:700}
+  .gt-stat .v.fv{color:#D4A8FF}
+
+  .ptw{background:var(--dl-white);border:1px solid var(--dl-border);border-radius:3px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+
+  .footer{margin-top:32px;padding-top:16px;border-top:2px solid var(--dl-green);display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px}
+  .fn{display:flex;flex-direction:column;gap:3px}
+  .fn div{font-size:11px;color:var(--dl-muted)}
+  .fn div::before{content:'* ';color:var(--dl-green);font-weight:700}
+  .fb{font-size:13px;font-weight:700;color:var(--dl-muted);text-align:right;line-height:1.4}
+  .fb span{display:inline-block;width:7px;height:7px;background:var(--dl-green);border-radius:50%;margin-left:1px;vertical-align:middle}
+  .fc2{font-size:10px;font-weight:400;color:var(--dl-muted);display:block;margin-top:2px}
+
+
+  /* ── Per-person edit panel ── */
+  tr.edit-row td{background:#F0F8E0!important;padding:0;border-bottom:1px solid #C8E0A0}
+  .edit-panel{padding:10px 16px 12px 36px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+  .edit-field{display:flex;align-items:center;gap:8px}
+  .edit-lbl{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#3A6B00;white-space:nowrap}
+  .edit-input{border:1px solid #A8CC70;border-radius:3px;background:var(--dl-white);color:var(--dl-text);font-family:'Open Sans',sans-serif;font-size:13px;font-weight:700;padding:4px 8px;width:80px;text-align:right;outline:none}
+  .edit-input:focus{border-color:var(--dl-green);box-shadow:0 0 0 2px rgba(134,188,37,0.2)}
+  .edit-unit{font-size:11px;color:#3A6B00;font-weight:700}
+  .edit-sep{width:1px;height:20px;background:#C8E0A0}
+  .edit-reset{font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#3A6B00;background:none;border:1px solid #A8CC70;border-radius:3px;padding:3px 9px;cursor:pointer;font-family:'Open Sans',sans-serif}
+  .edit-reset:hover{background:#E0F0C0}
+  .edit-modified{font-size:10px;color:#DA291C;font-weight:700;font-style:italic;margin-left:4px;vertical-align:middle}
+  tr.p-row.modified td:first-child::after{content:' ✎';font-size:10px;color:var(--dl-green);font-style:normal}
+  .edit-hint{font-size:10px;color:#3A6B00;opacity:0.7;font-style:italic}
+  .edit-btn{font-size:10px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:rgba(255,255,255,0.6);background:none;border:none;cursor:pointer;padding:0;font-family:'Open Sans',sans-serif;float:right;margin-left:auto}
+  .edit-btn:hover{color:var(--dl-white)}
+  /* edit toggle icon on name cell */
+  tr.p-row .edit-icon{display:inline-block;font-size:10px;color:var(--dl-muted);margin-left:8px;cursor:pointer;opacity:0.5;vertical-align:middle;user-select:none}
+  tr.p-row:hover .edit-icon{opacity:1;color:var(--dl-green)}
+
+  @media(max-width:960px){.hi,.page{padding-left:20px;padding-right:20px}.metrics{grid-template-columns:repeat(2,1fr)}.wsr{gap:12px}}
+.tag-cpdd{color:#7A1919;background:#FAEAEA} .tag-odd{color:#3A5C00;background:#EEF6D6} .tag-hrdd{color:#4A2080;background:#F0EAFA}
+tr.edit-row td{background:#F0F8E0!important;padding:0;border-bottom:1px solid #C8E0A0}
+.edit-panel{padding:10px 16px 12px 36px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.edit-field{display:flex;align-items:center;gap:8px}
+.edit-lbl{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#3A6B00;white-space:nowrap}
+.edit-input{border:1px solid #A8CC70;border-radius:3px;background:var(--dl-white);color:var(--dl-text);font-family:'Open Sans',sans-serif;font-size:13px;font-weight:700;padding:4px 8px;width:80px;text-align:right;outline:none}
+.edit-input:focus{border-color:var(--dl-green);box-shadow:0 0 0 2px rgba(134,188,37,0.2)}
+.edit-unit{font-size:11px;color:#3A6B00;font-weight:700}
+.edit-sep{width:1px;height:20px;background:#C8E0A0}
+.edit-reset{font-size:10px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#3A6B00;background:none;border:1px solid #A8CC70;border-radius:3px;padding:3px 9px;cursor:pointer;font-family:'Open Sans',sans-serif}
+.edit-reset:hover{background:#E0F0C0}
+.edit-modified{font-size:10px;color:var(--dl-red);font-weight:700;font-style:italic;margin-left:4px;vertical-align:middle}
+tr.p-row.modified td:first-child::after{content:' ✎';font-size:10px;color:var(--dl-green)}
+.edit-hint{font-size:10px;color:#3A6B00;opacity:0.7;font-style:italic}
+tr.p-row .edit-icon{display:inline-block;font-size:10px;color:var(--dl-muted);margin-left:8px;cursor:pointer;opacity:0.5;vertical-align:middle;user-select:none}
+tr.p-row:hover .edit-icon{opacity:1;color:var(--dl-green)}
+.good{color:#3A6B00;font-weight:700} .ok{color:#5A8C00;font-weight:700} .low{color:var(--dl-amber);font-weight:700} .neg{color:var(--dl-red);font-weight:700}
+@media(max-width:960px){.shell-inner,.nav-bar,.summary-page,.project-view .page{padding-left:16px;padding-right:16px}.port-metrics{grid-template-columns:repeat(2,1fr)}.project-cards{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+
+<div class="shell-header">
+  <div class="shell-inner">
+    <div class="wm">Deloitte<span></span></div>
+    <div>
+      <div class="shell-title">Deal Advisory — Project Portfolio</div>
+      <div class="shell-sub">Strategy &amp; Transactions · Fee Tracker</div>
+    </div>
+  </div>
+</div>
+
+<nav class="nav-bar">
+  <a class="nav-tab active" href="file:///C:/Users/chlackey/Downloads/index.html#/" id="nav-home">Portfolio <span class="nav-badge">2 projects</span></a>
+  <div class="nav-sep"></div>
+  <a class="nav-tab" href="file:///C:/Users/chlackey/Downloads/index.html#/aspen" id="nav-aspen">Project Aspen</a>
+  <a class="nav-tab" href="file:///C:/Users/chlackey/Downloads/index.html#/intrepid" id="nav-intrepid">Project Intrepid</a>
+</nav>
+
+<div class="view-container">
+
+  <div class="view" id="view-home">
+    <div class="summary-page">
+      <div class="page-heading">
+        <h1>Active Engagements — <em>Together makes progress</em></h1>
+        <p>Strategy &amp; Transactions · Blackstone Infrastructure Partners · As of April 16, 2026</p>
+      </div>
+      <div class="port-metrics" id="port-metrics"><div class="pm"><div class="pm-label">Active projects</div><div class="pm-value">2</div><div class="pm-sub">47 team members</div></div><div class="pm"><div class="pm-label">Total gross fees</div><div class="pm-value">$2.07M</div><div class="pm-sub">At standard rates</div></div><div class="pm"><div class="pm-label">Total cost</div><div class="pm-value">$525K</div><div class="pm-sub">Incl. NB burden</div></div><div class="pm"><div class="pm-label">Total invoiced</div><div class="pm-value">$1.44M</div><div class="pm-sub">1 of 2 projects</div></div><div class="pm"><div class="pm-label">Total FMVA rev.</div><div class="pm-value" style="color:#4A2080">$1.03M</div><div class="pm-sub">WIP system gross revenue</div></div></div>
+      <div class="client-group">
+        <div class="client-header">
+          <div class="client-logo">BX</div>
+          <div>
+            <div class="client-name">Blackstone Infrastructure Partners</div>
+            <div class="client-sub">2 active engagements · Strategy &amp; Transactions</div>
+          </div>
+        </div>
+        <div class="project-cards" id="project-cards"><a class="project-card" href="file:///C:/Users/chlackey/Downloads/index.html#/aspen"><div class="card-top"><div><div class="card-project">Project Aspen</div><div class="card-wbs">BLA06492-01-01</div></div><div><span class="status-badge status-invoiced">Invoiced</span></div></div><div class="card-body"><div class="card-stat"><div class="cs-label">Gross fees</div><div class="cs-value">$1.86M</div><div class="cs-sub">At standard rates</div></div><div class="card-stat"><div class="cs-label">Billable hours</div><div class="cs-value">882.6</div><div class="cs-sub">+ 133 non-bill.</div></div><div class="card-stat"><div class="cs-label">Net margin</div><div class="cs-value good">78%</div><div class="cs-sub">$1.44M on gross</div></div><div class="card-stat"><div class="cs-label">FMVA revenue</div><div class="cs-value" style="color:#4A2080">$916K</div><div class="cs-sub">WIP system rate</div></div><div class="card-stat"><div class="cs-label">Team size</div><div class="cs-value">35</div><div class="cs-sub">28 US · 7 USI · 1 MF</div></div><div class="card-stat"><div class="cs-label">Last updated</div><div class="cs-value" style="font-size:13px">Apr 15, 2026</div><div class="cs-sub">WIP as of date</div></div></div><div class="inv-highlight"><div class="ih-stat"><div class="ih-lbl">Invoiced</div><div class="ih-val">$1,440,000</div></div><div class="ih-stat"><div class="ih-lbl">Inv. margin $</div><div class="ih-val gn">$1,023,122</div></div><div class="ih-stat"><div class="ih-lbl">Inv. margin %</div><div class="ih-val gn">71%</div></div></div><div class="card-footer"><div class="card-ws"><span class="ws-chip chip-fdd">FDD</span><span class="ws-chip chip-cpdd">CPDD</span><span class="ws-chip chip-odd">ODD</span><span class="ws-chip chip-hrdd">HRDD</span><span class="ws-chip chip-tax">Tax DD</span><span class="ws-chip chip-tax">Tax Struct.</span></div><div class="card-cta">Open tracker</div></div></a><a class="project-card" href="file:///C:/Users/chlackey/Downloads/index.html#/intrepid"><div class="card-top"><div><div class="card-project">Project Intrepid</div><div class="card-wbs">BLA06531-01-01</div></div><div><span class="status-badge status-wip">WIP — Open</span></div></div><div class="card-body"><div class="card-stat"><div class="cs-label">Gross fees</div><div class="cs-value">$220K</div><div class="cs-sub">At standard rates</div></div><div class="card-stat"><div class="cs-label">Billable hours</div><div class="cs-value">180.2</div><div class="cs-sub">+ 284 non-bill.</div></div><div class="card-stat"><div class="cs-label">Net margin</div><div class="cs-value good">51%</div><div class="cs-sub">$112K on gross</div></div><div class="card-stat"><div class="cs-label">FMVA revenue</div><div class="cs-value" style="color:#4A2080">$115K</div><div class="cs-sub">WIP system rate</div></div><div class="card-stat"><div class="cs-label">Team size</div><div class="cs-value">12</div><div class="cs-sub">8 US · 4 USI</div></div><div class="card-stat"><div class="cs-label">Last updated</div><div class="cs-value" style="font-size:13px">Apr 16, 2026</div><div class="cs-sub">WIP as of date</div></div></div><div class="card-footer"><div class="card-ws"><span class="ws-chip chip-fdd">FDD</span><span class="ws-chip chip-tax">Tax DD</span><span class="ws-chip chip-tax">Tax Struct.</span></div><div class="card-cta">Open tracker</div></div></a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="view hidden project-view" id="view-aspen">
+    <header style="background:var(--dl-dark);border-top:4px solid var(--dl-green);position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.18)">
+      <div style="max-width:1500px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+        <div style="display:flex;align-items:center;gap:20px">
+          <a href="file:///C:/Users/chlackey/Downloads/index.html#/" style="font-size:11px;color:rgba(255,255,255,0.45);text-decoration:none;display:flex;align-items:center;gap:5px;padding-right:16px;border-right:1px solid rgba(255,255,255,0.15);transition:color 0.15s" onmouseover="this.style.color=&#39;rgba(255,255,255,0.8)&#39;" onmouseout="this.style.color=&#39;rgba(255,255,255,0.45)&#39;">← Portfolio</a>
+          <div>
+            <div style="font-size:15px;font-weight:700;color:var(--dl-white)">Project Aspen — Fee Summary</div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.5)">Blackstone Infrastructure Partners &nbsp;·&nbsp; Strategy &amp; Transactions</div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.4);text-align:right;line-height:1.5">WBS: BLA06492-01-01<br>As of April 15, 2026</div>
+      </div>
+    </header>
+    <div class="page">
+    <div class="controls">
+      <div class="cg"><span class="cl">View</span>
+        <select id="view" onchange="render()">
+          <option value="ws">By workstream</option>
+          <option value="person">By person</option>
+        </select>
+      </div>
+      <div class="dv"></div>
+      <div class="cg"><span class="cl">Cohort</span>
+        <select id="coh" onchange="render()">
+          <option value="all">All cohorts</option>
+          <option value="US Core">US Core only</option>
+          <option value="USI">USI only</option>
+        </select>
+      </div>
+      <div class="dv"></div>
+      <div class="cg dw">
+        <span class="cl">Discount rate</span>
+        <input type="range" min="0" max="40" step="1" value="0" id="disc" oninput="document.getElementById(&#39;dval&#39;).textContent=this.value+&#39;%&#39;;render()">
+        <span class="dval" id="dval">0%</span>
+      </div>
+      <div class="dv" id="reset-sep" style="display:none"></div>
+      <div class="cg" id="reset-wrap" style="display:none">
+        <span class="cl" style="color:var(--dl-red)">Overrides active</span>
+        <button onclick="resetAll()" style="font-size:11px;font-weight:700;font-family:&#39;Open Sans&#39;,sans-serif;background:none;border:1px solid var(--dl-red);border-radius:3px;color:var(--dl-red);padding:4px 10px;cursor:pointer">Reset all</button>
+      </div>
+    </div>
+    <div class="inv-banner" id="inv-banner"></div>
+    <div class="metrics" id="metrics"></div>
+    <div id="content"></div>
+    <div class="footer">
+      <div class="fn">
+        <div>USI bill rate: flat $450/hr; cost rates per FY26 table</div>
+        <div>Non-billable hours billed at $0/hr; cost rates still accumulate</div>
+        <div>US Core rates per FY26 standard table (Managing Director updated to $1,763/hr)</div>
+        <div>FMVA Revenue = Gross Revenue from WIP system — unaffected by discount or hour overrides</div>
+        <div>Click any name or subtotal row to expand/collapse weekly hours. Click ✎ to edit hours or discount rate.</div>
+      </div>
+      <div class="fb">Deloitte<span></span><span class="fc2">Confidential — internal use only</span></div>
+    </div>
+</div>
+  </div>
+
+  <div class="view hidden project-view" id="view-intrepid">
+    <header style="background:var(--dl-dark);border-top:4px solid var(--dl-green);position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.18)">
+      <div style="max-width:1500px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+        <div style="display:flex;align-items:center;gap:20px">
+          <a href="file:///C:/Users/chlackey/Downloads/index.html#/" style="font-size:11px;color:rgba(255,255,255,0.45);text-decoration:none;display:flex;align-items:center;gap:5px;padding-right:16px;border-right:1px solid rgba(255,255,255,0.15);transition:color 0.15s" onmouseover="this.style.color=&#39;rgba(255,255,255,0.8)&#39;" onmouseout="this.style.color=&#39;rgba(255,255,255,0.45)&#39;">← Portfolio</a>
+          <div>
+            <div style="font-size:15px;font-weight:700;color:var(--dl-white)">Project Intrepid — Fee Summary</div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.5)">Blackstone Infrastructure Partners &nbsp;·&nbsp; Strategy &amp; Transactions</div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.4);text-align:right;line-height:1.5">WBS: BLA06531-01-01<br>As of April 16, 2026</div>
+      </div>
+    </header>
+    <div class="page">
+    <div class="controls">
+      <div class="cg"><span class="cl">View</span>
+        <select id="view" onchange="render()">
+          <option value="ws">By workstream</option>
+          <option value="person">By person</option>
+        </select>
+      </div>
+      <div class="dv"></div>
+      <div class="cg"><span class="cl">Cohort</span>
+        <select id="coh" onchange="render()">
+          <option value="all">All cohorts</option>
+          <option value="US Core">US Core only</option>
+          <option value="USI">USI only</option>
+        </select>
+      </div>
+      <div class="dv"></div>
+      <div class="cg dw">
+        <span class="cl">Discount rate</span>
+        <input type="range" min="0" max="40" step="1" value="0" id="disc" oninput="document.getElementById(&#39;dval&#39;).textContent=this.value+&#39;%&#39;;render()">
+        <span class="dval" id="dval">0%</span>
+      </div>
+      <div class="dv" id="reset-sep" style="display:none"></div>
+      <div class="cg" id="reset-wrap" style="display:none">
+        <span class="cl" style="color:var(--dl-red)">Overrides active</span>
+        <button onclick="resetAll()" style="font-size:11px;font-weight:700;font-family:&#39;Open Sans&#39;,sans-serif;background:none;border:1px solid var(--dl-red);border-radius:3px;color:var(--dl-red);padding:4px 10px;cursor:pointer">Reset all</button>
+      </div>
+    </div>
+    <div class="inv-banner" id="inv-banner"></div>
+    <div class="metrics" id="metrics"></div>
+    <div id="content"></div>
+    <div class="footer">
+      <div class="fn">
+        <div>USI bill rate: flat $450/hr; cost rates per FY26 table</div>
+        <div>Non-billable hours billed at $0/hr; cost rates still accumulate</div>
+        <div>US Core rates per FY26 standard table (Managing Director updated to $1,763/hr)</div>
+        <div>FMVA Revenue = Gross Revenue from WIP system — unaffected by discount or hour overrides</div>
+        <div>Click any name or subtotal row to expand/collapse weekly hours. Click ✎ to edit hours or discount rate.</div>
+      </div>
+      <div class="fb">Deloitte<span></span><span class="fc2">Confidential — internal use only</span></div>
+    </div>
+</div>
+  </div>
+
+</div>
+
+<script>
+/* ══ PORTFOLIO DATA ══ */
+var PORTFOLIO=[
+  {id:'aspen',route:'aspen',name:'Project Aspen',client:'Blackstone Infrastructure Partners',wbs:'BLA06492-01-01',asOf:'Apr 15, 2026',status:'invoiced',invoiced:1440000,invoicedMargin:1023122,billable_ws:['FDD','CPDD','ODD','HRDD','Tax Diligence','Tax Structuring'],grossFees:1855088,totalCost:416879,billableHrs:882.6,nbHrs:133,fmvaRev:916173,people:35,usPeople:28,usiPeople:7,brazil:true},
+  {id:'intrepid',route:'intrepid',name:'Project Intrepid',client:'Blackstone Infrastructure Partners',wbs:'BLA06531-01-01',asOf:'Apr 16, 2026',status:'wip',invoiced:null,billable_ws:['FDD','Tax Diligence','Tax Structuring'],grossFees:219826,totalCost:107991,billableHrs:180.2,nbHrs:284,fmvaRev:114613,people:12,usPeople:8,usiPeople:4,brazil:false}
+];
+function fMp(n){if(n===null||n===undefined)return '—';if(Math.abs(n)>=1e6)return '$'+(n/1e6).toFixed(2)+'M';if(Math.abs(n)>=1000)return '$'+Math.round(n/1000)+'K';return '$'+Math.round(n);}
+function fFp(n){if(n===null||n===undefined)return '—';return '$'+Math.round(n).toLocaleString();}
+function fPp(n){if(n===null||n===undefined)return '—';return Math.round(n)+'%';}
+function mcp(p){if(p===null)return '';if(p>=50)return 'good';if(p>=30)return 'ok';if(p>=0)return 'low';return 'neg';}
+function wsChip(ws){var m={'FDD':'chip-fdd','CPDD':'chip-cpdd','ODD':'chip-odd','HRDD':'chip-hrdd','Non-Billable':'chip-nb','Tax Diligence':'chip-tax','Tax Modeling':'chip-tax','Tax Structuring':'chip-tax'};var l={'FDD':'FDD','CPDD':'CPDD','ODD':'ODD','HRDD':'HRDD','Non-Billable':'Non-Bill.','Tax Diligence':'Tax DD','Tax Structuring':'Tax Struct.'};return '<span class="ws-chip '+(m[ws]||'chip-nb')+'">'+(l[ws]||ws)+'</span>';}
+function renderPortfolio(){
+  var tG=0,tC=0,tH=0,tI=0,tF=0,tP=0;
+  PORTFOLIO.forEach(function(p){tG+=p.grossFees||0;tC+=p.totalCost||0;tH+=p.billableHrs||0;tF+=p.fmvaRev||0;tP+=p.people||0;if(p.invoiced)tI+=p.invoiced;});
+  document.getElementById('port-metrics').innerHTML=
+    '<div class="pm"><div class="pm-label">Active projects</div><div class="pm-value">'+PORTFOLIO.length+'</div><div class="pm-sub">'+tP+' team members</div></div>'+
+    '<div class="pm"><div class="pm-label">Total gross fees</div><div class="pm-value">'+fMp(tG)+'</div><div class="pm-sub">At standard rates</div></div>'+
+    '<div class="pm"><div class="pm-label">Total cost</div><div class="pm-value">'+fMp(tC)+'</div><div class="pm-sub">Incl. NB burden</div></div>'+
+    '<div class="pm"><div class="pm-label">Total invoiced</div><div class="pm-value">'+fMp(tI||null)+'</div><div class="pm-sub">1 of '+PORTFOLIO.length+' projects</div></div>'+
+    '<div class="pm"><div class="pm-label">Total FMVA rev.</div><div class="pm-value" style="color:#4A2080">'+fMp(tF)+'</div><div class="pm-sub">WIP system gross revenue</div></div>';
+  var cards='';
+  PORTFOLIO.forEach(function(p){
+    var nm=p.grossFees-p.totalCost,mp=p.grossFees>0?nm/p.grossFees*100:0;
+    var ib='';
+    if(p.status==='invoiced'&&p.invoiced){var im=p.invoicedMargin||0,imp=p.invoiced>0?im/p.invoiced*100:0;ib='<div class="inv-highlight"><div class="ih-stat"><div class="ih-lbl">Invoiced</div><div class="ih-val">'+fFp(p.invoiced)+'</div></div><div class="ih-stat"><div class="ih-lbl">Inv. margin $</div><div class="ih-val gn">'+fFp(Math.round(im))+'</div></div><div class="ih-stat"><div class="ih-lbl">Inv. margin %</div><div class="ih-val gn">'+fPp(imp)+'</div></div></div>';}
+    var chips=p.billable_ws.map(wsChip).join('');
+    var sb=p.status==='invoiced'?'<span class="status-badge status-invoiced">Invoiced</span>':'<span class="status-badge status-wip">WIP — Open</span>';
+    cards+='<a class="project-card" href="#/'+p.route+'">'+
+      '<div class="card-top"><div><div class="card-project">'+p.name+'</div><div class="card-wbs">'+p.wbs+'</div></div><div>'+sb+'</div></div>'+
+      '<div class="card-body">'+
+        '<div class="card-stat"><div class="cs-label">Gross fees</div><div class="cs-value">'+fMp(p.grossFees)+'</div><div class="cs-sub">At standard rates</div></div>'+
+        '<div class="card-stat"><div class="cs-label">Billable hours</div><div class="cs-value">'+p.billableHrs.toFixed(1)+'</div><div class="cs-sub">+ '+p.nbHrs+' non-bill.</div></div>'+
+        '<div class="card-stat"><div class="cs-label">Net margin</div><div class="cs-value '+mcp(mp)+'">'+fPp(mp)+'</div><div class="cs-sub">'+fMp(nm)+' on gross</div></div>'+
+        '<div class="card-stat"><div class="cs-label">FMVA revenue</div><div class="cs-value" style="color:#4A2080">'+fMp(p.fmvaRev)+'</div><div class="cs-sub">WIP system rate</div></div>'+
+        '<div class="card-stat"><div class="cs-label">Team size</div><div class="cs-value">'+p.people+'</div><div class="cs-sub">'+p.usPeople+' US · '+p.usiPeople+' USI'+(p.brazil?' · 1 MF':'')+'</div></div>'+
+        '<div class="card-stat"><div class="cs-label">Last updated</div><div class="cs-value" style="font-size:13px">'+p.asOf+'</div><div class="cs-sub">WIP as of date</div></div>'+
+      '</div>'+ib+
+      '<div class="card-footer"><div class="card-ws">'+chips+'</div><div class="card-cta">Open tracker</div></div>'+
+    '</a>';
+  });
+  document.getElementById('project-cards').innerHTML=cards;
+}
+
+/* ══ HASH ROUTER ══ */
+var ROUTES={'':'view-home','aspen':'view-aspen','intrepid':'view-intrepid'};
+var NAV_IDS={'':'nav-home','aspen':'nav-aspen','intrepid':'nav-intrepid'};
+var initialized={};
+var currentRoute=null;
+function route(){
+  var hash=(location.hash||'').replace(/^#\/?/,'').split('/')[0]||'';
+  if(!(hash in ROUTES)){location.hash='#/';return;}
+  if(hash===currentRoute)return;
+  currentRoute=hash;
+  Object.values(ROUTES).forEach(function(id){var el=document.getElementById(id);if(el)el.classList.add('hidden');});
+  document.querySelectorAll('.nav-tab').forEach(function(t){t.classList.remove('active');});
+  var el=document.getElementById(ROUTES[hash]);if(el){el.classList.remove('hidden');el.scrollTop=0;}
+  var nt=document.getElementById(NAV_IDS[hash]);if(nt)nt.classList.add('active');
+  if(hash&&!initialized[hash]){
+    initialized[hash]=true;
+    if(window.Projects&&window.Projects[hash])window.Projects[hash].init();
+  } else if(hash&&initialized[hash]){
+    if(window.Projects&&window.Projects[hash])window.Projects[hash].init();
+  }
+}
+window.addEventListener('hashchange',route);
+window.addEventListener('load',function(){renderPortfolio();if(!location.hash||location.hash==='#'||location.hash==='#/')location.hash='#/';else route();});
+
+/* ══ PROJECT ASPEN MODULE ══ */
+
+// ─────────────────────────────────────────────
+// PROJECT MODULE: ASPEN
+// ─────────────────────────────────────────────
+window.Projects = window.Projects || {};
+window.Projects['aspen'] = (function() {
+
+var USI_BILL = 450;
+
+var USC_BILL={
+  'Partner Or Principal':1763,'Managing Director':1763,
+  'Senior Manager 2':1590,'Senior Manager 1':1590,'Manager 1':1501,
+  'Senior 2 Or Senior Consultant 2 or In-Ch':1300,
+  'Senior 1 Or Senior Consultant 1 or Asst.':1300,
+  'Senior 1 Or Senior Consultant 1 or\u00a0Asst.':1300,
+  'Intermediate 1 Or Consultant 1':1155,'Intermediate 2 Or Consultant 2':1155,
+  'Associate 2 Or Analyst 2':1071,'Staff/Consultant':1155,'Junior Staff/Analyst':1071};
+
+
+var USI_COST = {'Managing Director':284,'Senior Manager 1':77,'Manager 1':45,
+  'Senior 1 Or Senior Consultant 1 or Asst.':30,'Senior 1 Or Senior Consultant 1 or\u00a0Asst.':30,
+  'Senior 2 Or Senior Consultant 2 or In-Ch':30,'Intermediate 2 Or Consultant 2':30,
+  'Intermediate 1 Or Consultant 1':19,'Staff/Consultant':19,'Junior Staff/Analyst':4};
+var USC = {
+  'Partner Or Principal':{bill:1763,cost:750},'Managing Director':{bill:1763,cost:891},
+  'Senior Manager 2':{bill:1590,cost:294},'Senior Manager 1':{bill:1590,cost:294},
+  'Manager 1':{bill:1501,cost:179},
+  'Senior 2 Or Senior Consultant 2 or In-Ch':{bill:1300,cost:147},
+  'Senior 1 Or Senior Consultant 1 or Asst.':{bill:1300,cost:147},
+  'Senior 1 Or Senior Consultant 1 or\u00a0Asst.':{bill:1300,cost:147},
+  'Intermediate 1 Or Consultant 1':{bill:1155,cost:88},'Intermediate 2 Or Consultant 2':{bill:1155,cost:88},
+  'Associate 2 Or Analyst 2':{bill:1071,cost:83},'Staff/Consultant':{bill:1155,cost:88},'Junior Staff/Analyst':{bill:1071,cost:83}};
+function getRate(cohort,level){
+  if(cohort==='Member Firm') return {bill:0,cost:0}; // handled separately
+  if(cohort==='USI') return {bill:USI_BILL,cost:USI_COST[level]||30};
+  return USC[level]||{bill:0,cost:0};
+}
+
+var BILL_WS=['FDD','CPDD','ODD','HRDD','Tax Diligence','Tax Modeling','Tax Structuring'];
+var WS_META={
+  'FDD':      {tag:'tag-fdd', label:'Financial Due Diligence',        short:'FDD'},
+  'CPDD':     {tag:'tag-cpdd',label:'Capital Projects Due Diligence', short:'CPDD'},
+  'ODD':      {tag:'tag-odd', label:'Operational Due Diligence',      short:'ODD'},
+  'HRDD':     {tag:'tag-hrdd',label:'Human Resources Due Diligence',  short:'HRDD'},
+  'Tax Diligence':  {tag:'tag-taxd',label:'Tax Diligence',  short:'Tax Dilig.'},
+  'Tax Modeling':   {tag:'tag-taxm',label:'Tax Modeling',   short:'Tax Model.'},
+  'Tax Structuring':{tag:'tag-taxs',label:'Tax Structuring',short:'Tax Struct.'},
+  'Non-Billable':   {tag:'tag-nb',  label:'Non-Billable',   short:'Non-Bill.'}};
+var WS_ORDER=['FDD','CPDD','ODD','HRDD','Tax Diligence','Tax Modeling','Tax Structuring','Non-Billable'];
+var WEEKS=[['2025-12-22','Dec 22'],['2025-12-29','Dec 29'],['2026-01-05','Jan 5'],['2026-01-12','Jan 12'],
+  ['2026-01-19','Jan 19'],['2026-01-26','Jan 26'],['2026-02-02','Feb 2'],['2026-02-09','Feb 9'],
+  ['2026-02-16','Feb 16'],['2026-02-23','Feb 23'],['2026-03-09','Mar 9'],['2026-03-16','Mar 16'],
+  ['2026-03-23','Mar 23'],['2026-03-30','Mar 30'],['2026-04-06','Apr 6'],['2026-04-13','Apr 13']];
+
+var RAW=[{"name":"Applestein, Benjamin","ws":"Tax Structuring","level":"Partner Or Principal","cohort":"US Core","hours":1.0,"gross_revenue":794.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":1.0}}},{"name":"Bible, Charles","ws":"FDD","level":"Partner Or Principal","cohort":"US Core","hours":35.0,"gross_revenue":27790.0,"weeks":{"2026-01-26":{"label":"Jan 26","hours":4.0},"2026-02-02":{"label":"Feb 2","hours":4.0},"2026-02-09":{"label":"Feb 9","hours":4.0},"2026-03-09":{"label":"Mar 9","hours":10.0},"2026-03-16":{"label":"Mar 16","hours":9.0},"2026-04-06":{"label":"Apr 6","hours":4.0}}},{"name":"Bozeman, V","ws":"Tax Structuring","level":"Partner Or Principal","cohort":"US Core","hours":2.0,"gross_revenue":1588.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":2.0}}},{"name":"Bozeman, V","ws":"FDD","level":"Partner Or Principal","cohort":"US Core","hours":0.5,"gross_revenue":397.0,"weeks":{"2026-03-23":{"label":"Mar 23","hours":0.5}}},{"name":"Brankov, Joana","ws":"Tax Structuring","level":"Manager 1","cohort":"US Core","hours":4.5,"gross_revenue":2668.5,"weeks":{"2026-03-16":{"label":"Mar 16","hours":2.5},"2026-03-30":{"label":"Mar 30","hours":2.0}}},{"name":"Chapman, Wesley","ws":"Tax Structuring","level":"Partner Or Principal","cohort":"US Core","hours":1.25,"gross_revenue":992.5,"weeks":{"2026-01-12":{"label":"Jan 12","hours":1.25}}},{"name":"Chapman, Wesley","ws":"Tax Diligence","level":"Partner Or Principal","cohort":"US Core","hours":13.0,"gross_revenue":10322.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":3.5},"2026-03-16":{"label":"Mar 16","hours":5.25},"2026-03-23":{"label":"Mar 23","hours":3.25},"2026-03-30":{"label":"Mar 30","hours":1.0}}},{"name":"Chhabra, Sakshi","ws":"FDD","level":"Intermediate 1 Or Consultant 1","cohort":"USI","hours":39.0,"gross_revenue":10296.0,"weeks":{"2026-01-05":{"label":"Jan 5","hours":12.0},"2026-03-09":{"label":"Mar 9","hours":11.5},"2026-03-16":{"label":"Mar 16","hours":13.5},"2026-03-23":{"label":"Mar 23","hours":2.0}}},{"name":"Chhajed, Aman Praveen","ws":"FDD","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"USI","hours":9.0,"gross_revenue":2826.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":9.0}}},{"name":"Choudhary, Ishani Abhinav","ws":"FDD","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"USI","hours":48.0,"gross_revenue":15072.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":34.0},"2026-03-23":{"label":"Mar 23","hours":14.0}}},{"name":"Desai, Anand","ws":"CPDD","level":"Managing Director","cohort":"US Core","hours":23.0,"gross_revenue":18262.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":10.0},"2026-03-23":{"label":"Mar 23","hours":5.0},"2026-04-06":{"label":"Apr 6","hours":8.0}}},{"name":"Fehl, Thomas","ws":"Tax Structuring","level":"Intermediate 1 Or Consultant 1","cohort":"US Core","hours":3.4,"gross_revenue":1465.4,"weeks":{"2026-03-16":{"label":"Mar 16","hours":3.4}}},{"name":"Finazzo, Tyler","ws":"HRDD","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"US Core","hours":7.25,"gross_revenue":3712.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":3.75},"2026-03-23":{"label":"Mar 23","hours":3.5}}},{"name":"Friedman, Edgar","ws":"HRDD","level":"Managing Director","cohort":"US Core","hours":44.0,"gross_revenue":34936.0,"weeks":{"2026-01-05":{"label":"Jan 5","hours":5.5},"2026-03-09":{"label":"Mar 9","hours":3.0},"2026-03-16":{"label":"Mar 16","hours":10.0},"2026-03-23":{"label":"Mar 23","hours":25.5}}},{"name":"Gallas, Grant","ws":"FDD","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"US Core","hours":204.5,"gross_revenue":104704.0,"weeks":{"2025-12-22":{"label":"Dec 22","hours":14.5},"2025-12-29":{"label":"Dec 29","hours":11.5},"2026-01-05":{"label":"Jan 5","hours":38.0},"2026-01-12":{"label":"Jan 12","hours":0.5},"2026-02-09":{"label":"Feb 9","hours":5.0},"2026-03-09":{"label":"Mar 9","hours":32.5},"2026-03-16":{"label":"Mar 16","hours":51.0},"2026-03-23":{"label":"Mar 23","hours":51.5}}},{"name":"Gantasala, Harish V V N","ws":"Tax Structuring","level":"Senior Manager 1","cohort":"USI","hours":1.0,"gross_revenue":426.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":1.0}}},{"name":"Giameo, Stephanie","ws":"FDD","level":"Senior Manager 1","cohort":"US Core","hours":102.5,"gross_revenue":71340.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":35.0},"2026-03-16":{"label":"Mar 16","hours":37.0},"2026-03-23":{"label":"Mar 23","hours":27.0},"2026-03-30":{"label":"Mar 30","hours":3.5}}},{"name":"Gilbert, Ian","ws":"Tax Structuring","level":"Senior Manager 1","cohort":"US Core","hours":4.0,"gross_revenue":2784.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":4.0}}},{"name":"Gilbert, Ian","ws":"Tax Diligence","level":"Senior Manager 1","cohort":"US Core","hours":1.2,"gross_revenue":835.2,"weeks":{"2026-03-23":{"label":"Mar 23","hours":1.2}}},{"name":"Henriques, William","ws":"ODD","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"US Core","hours":18.0,"gross_revenue":9216.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":18.0}}},{"name":"Jain, Saiyam","ws":"FDD","level":"Intermediate 1 Or Consultant 1","cohort":"USI","hours":9.0,"gross_revenue":2376.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":9.0}}},{"name":"Khandelwal, Nimish","ws":"FDD","level":"Senior 2 Or Senior Consultant 2 or In-Ch","cohort":"USI","hours":2.0,"gross_revenue":628.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":2.0}}},{"name":"Klaus, Marian","ws":"Tax Structuring","level":"Partner Or Principal","cohort":"US Core","hours":3.0,"gross_revenue":2382.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":3.0}}},{"name":"Ko, Youngbok","ws":"Tax Structuring","level":"Senior Manager 1","cohort":"US Core","hours":0.75,"gross_revenue":522.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":0.75}}},{"name":"Kotek, Benjamin","ws":"ODD","level":"Senior Manager 1","cohort":"US Core","hours":4.0,"gross_revenue":2784.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":4.0}}},{"name":"Lackey, Chad","ws":"FDD","level":"Senior Manager 1","cohort":"US Core","hours":174.0,"gross_revenue":121104.0,"weeks":{"2025-12-22":{"label":"Dec 22","hours":7.0},"2025-12-29":{"label":"Dec 29","hours":6.0},"2026-01-05":{"label":"Jan 5","hours":18.0},"2026-01-12":{"label":"Jan 12","hours":1.0},"2026-03-09":{"label":"Mar 9","hours":18.0},"2026-03-16":{"label":"Mar 16","hours":39.0},"2026-03-23":{"label":"Mar 23","hours":80.0},"2026-04-06":{"label":"Apr 6","hours":5.0}}},{"name":"Larkin, Matthew","ws":"Tax Diligence","level":"Senior Manager 1","cohort":"US Core","hours":78.75,"gross_revenue":54810.0,"weeks":{"2026-01-12":{"label":"Jan 12","hours":10.5},"2026-03-09":{"label":"Mar 9","hours":20.75},"2026-03-16":{"label":"Mar 16","hours":30.75},"2026-03-23":{"label":"Mar 23","hours":11.25},"2026-03-30":{"label":"Mar 30","hours":4.5},"2026-04-06":{"label":"Apr 6","hours":1.0}}},{"name":"Lashley, David","ws":"ODD","level":"Partner Or Principal","cohort":"US Core","hours":4.5,"gross_revenue":3573.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":2.5},"2026-03-23":{"label":"Mar 23","hours":2.0}}},{"name":"Matsumoto, Liam","ws":"FDD","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"US Core","hours":134.0,"gross_revenue":68608.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":19.5},"2026-03-16":{"label":"Mar 16","hours":65.0},"2026-03-23":{"label":"Mar 23","hours":44.5},"2026-04-06":{"label":"Apr 6","hours":5.0}}},{"name":"Miglani, Sweta","ws":"FDD","level":"Intermediate 1 Or Consultant 1","cohort":"USI","hours":21.03,"gross_revenue":5551.92,"weeks":{"2026-03-16":{"label":"Mar 16","hours":13.5},"2026-03-23":{"label":"Mar 23","hours":6.2},"2026-03-30":{"label":"Mar 30","hours":1.33}}},{"name":"Morrison, Colton","ws":"Non-Billable","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"US Core","hours":10.0,"gross_revenue":5120.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":10.0}}},{"name":"Perez Gonzalez, Brenda","ws":"Non-Billable","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"US Core","hours":68.0,"gross_revenue":34816.0,"weeks":{"2026-02-02":{"label":"Feb 2","hours":8.0},"2026-02-16":{"label":"Feb 16","hours":21.0},"2026-02-23":{"label":"Feb 23","hours":39.0}}},{"name":"Rai, Sarah","ws":"CPDD","level":"Manager 1","cohort":"US Core","hours":62.0,"gross_revenue":36766.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":34.0},"2026-03-23":{"label":"Mar 23","hours":28.0}}},{"name":"Richardson, Christopher","ws":"ODD","level":"Manager 1","cohort":"US Core","hours":18.0,"gross_revenue":10674.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":18.0}}},{"name":"Scaramella, Michael","ws":"Tax Structuring","level":"Partner Or Principal","cohort":"US Core","hours":1.5,"gross_revenue":1191.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":1.5}}},{"name":"Sinha, Abhishek","ws":"FDD","level":"Manager 1","cohort":"USI","hours":85.0,"gross_revenue":30855.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":17.0},"2026-03-16":{"label":"Mar 16","hours":58.0},"2026-03-23":{"label":"Mar 23","hours":10.0}}},{"name":"Sleighter, Mark","ws":"Tax Diligence","level":"Partner Or Principal","cohort":"US Core","hours":21.5,"gross_revenue":17071.0,"weeks":{"2025-12-22":{"label":"Dec 22","hours":2.0},"2025-12-29":{"label":"Dec 29","hours":1.0},"2026-01-05":{"label":"Jan 5","hours":2.0},"2026-01-12":{"label":"Jan 12","hours":3.0},"2026-03-09":{"label":"Mar 9","hours":2.0},"2026-03-16":{"label":"Mar 16","hours":4.0},"2026-03-23":{"label":"Mar 23","hours":5.5},"2026-04-06":{"label":"Apr 6","hours":2.0}}},{"name":"Sleighter, Mark","ws":"Tax Structuring","level":"Partner Or Principal","cohort":"US Core","hours":17.0,"gross_revenue":13498.0,"weeks":{"2026-03-09":{"label":"Mar 9","hours":2.0},"2026-03-16":{"label":"Mar 16","hours":9.0},"2026-03-30":{"label":"Mar 30","hours":4.0},"2026-04-06":{"label":"Apr 6","hours":2.0}}},{"name":"Smith, Brendan","ws":"Tax Structuring","level":"Manager 1","cohort":"US Core","hours":7.7,"gross_revenue":4566.1,"weeks":{"2026-03-16":{"label":"Mar 16","hours":6.5},"2026-03-23":{"label":"Mar 23","hours":1.2}}},{"name":"Stonecipher, Christian","ws":"FDD","level":"Associate 2 Or Analyst 2","cohort":"US Core","hours":128.5,"gross_revenue":53199.0,"weeks":{"2025-12-29":{"label":"Dec 29","hours":4.0},"2026-01-05":{"label":"Jan 5","hours":13.0},"2026-03-09":{"label":"Mar 9","hours":23.5},"2026-03-16":{"label":"Mar 16","hours":45.5},"2026-03-23":{"label":"Mar 23","hours":42.5}}},{"name":"Stonecipher, Christian","ws":"Non-Billable","level":"Associate 2 Or Analyst 2","cohort":"US Core","hours":45.0,"gross_revenue":18630.0,"weeks":{"2026-03-30":{"label":"Mar 30","hours":20.0},"2026-04-06":{"label":"Apr 6","hours":25.0}}},{"name":"Suarez, Henry","ws":"Non-Billable","level":"Associate 2 Or Analyst 2","cohort":"US Core","hours":10.0,"gross_revenue":4140.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":10.0}}},{"name":"T, Venkatesh","ws":"Tax Structuring","level":"Intermediate 1 Or Consultant 1","cohort":"USI","hours":2.5,"gross_revenue":660.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":2.5}}},{"name":"Wolfram, Matthew","ws":"CPDD","level":"Senior Manager 1","cohort":"US Core","hours":9.25,"gross_revenue":6438.0,"weeks":{"2026-01-12":{"label":"Jan 12","hours":3.0},"2026-03-09":{"label":"Mar 9","hours":4.0},"2026-03-16":{"label":"Mar 16","hours":0.75},"2026-03-23":{"label":"Mar 23","hours":1.5}}},{"name":"Deloitte Brazil (Subcontractor)","ws":"CPDD","level":"_subcontractor","cohort":"Member Firm","hours":0,"gross_revenue":0,"weeks":{},"subcontract":true,"subcontract_cost":36865,"subcontract_rev":36865},{"name":"Wright, Chase","ws":"FDD","level":"Managing Director","cohort":"US Core","hours":65.0,"gross_revenue":51610.0,"weeks":{"2025-12-22":{"label":"Dec 22","hours":1.0},"2025-12-29":{"label":"Dec 29","hours":1.5},"2026-01-05":{"label":"Jan 5","hours":6.3},"2026-01-12":{"label":"Jan 12","hours":2.0},"2026-03-09":{"label":"Mar 9","hours":9.5},"2026-03-16":{"label":"Mar 16","hours":16.1},"2026-03-23":{"label":"Mar 23","hours":23.6},"2026-03-30":{"label":"Mar 30","hours":4.0},"2026-04-06":{"label":"Apr 6","hours":0.5},"2026-04-13":{"label":"Apr 13","hours":0.5}}}];
+
+/* ── Invoice data ── */
+var INVOICE = {
+  'FDD':           {inv:871705,  exp:9988.40},
+  'CPDD':          {inv:195000,  exp:0},
+  'ODD':           {inv:56776,   exp:0},
+  'HRDD':          {inv:81139,   exp:0},
+  'Tax Diligence': {inv:null,    exp:0},   // combined into Tax
+  'Tax Structuring':{inv:null,   exp:0},
+  '_Tax':          {inv:235380,  exp:0},   // Tax Diligence + Tax Structuring combined
+};
+
+function renderInvoice(data){
+  // Compute gross bill at 0% discount for each ws from data
+  var gb={};
+  data.forEach(function(d){
+    if(!d.billable) return;
+    gb[d.ws]=(gb[d.ws]||0)+(d.hours*(d.cohort==='USI'?450:(USC_BILL[d.level]||0)));
+  });
+
+  // costs including expenses
+  var wsCost={};
+  data.forEach(function(d){wsCost[d.ws]=(wsCost[d.ws]||0)+d.cost;});
+  // Add expense costs
+  wsCost['FDD']=(wsCost['FDD']||0)+9988.40;
+
+  var taxGross=(gb['Tax Diligence']||0)+(gb['Tax Structuring']||0);
+  var taxCost=(wsCost['Tax Diligence']||0)+(wsCost['Tax Structuring']||0);
+  var taxInv=235380;
+
+  var wsConfig=[
+    {key:'FDD',       inv:871705,  tag:'tag-fdd',  label:'FDD'},
+    {key:'CPDD',      inv:195000,  tag:'tag-cpdd', label:'CPDD', brazil:36865},
+    {key:'ODD',       inv:56776,   tag:'tag-odd',  label:'ODD'},
+    {key:'HRDD',      inv:81139,   tag:'tag-hrdd', label:'HRDD'},
+    {key:'_Tax',      inv:235380,  tag:'tag-taxd', label:'Tax'},
+  ];
+
+  var totalInv=1440000;
+  var totalGross=Object.values(gb).reduce(function(s,v){return s+v;},0);
+  var totalCost=Object.values(wsCost).reduce(function(s,v){return s+v;},0);
+  // add non-billable cost to total burden
+  var totalCostAll=totalCost+36865; // includes NB burden + Brazil subcontract
+  var totalInvMar=totalInv-totalCostAll;
+  var totalImplDisc=(totalGross-totalInv)/totalGross;
+
+  var wsCards='';
+  wsConfig.forEach(function(w){
+    var wsGross= w.key==='_Tax' ? taxGross : (gb[w.key]||0);
+    var wsCostW= w.key==='_Tax' ? taxCost  : (wsCost[w.key]||0);
+    var inv=w.inv;
+    var mar=inv-wsCostW;
+    var disc=(wsGross-inv)/wsGross;
+    var discPct=Math.round(disc*100);
+    var isPremium=disc<0;
+    var marCls=mar>=0?'gn':'rd';
+    var discCls=isPremium?'premium':'';
+    var discLabel=isPremium?'Premium vs. standard: '+(Math.abs(discPct))+'%':'Implied discount: '+discPct+'%';
+
+    wsCards+='<div class="inv-ws">'+
+      '<div class="inv-ws-tag '+w.tag+'">'+w.label+'</div>'+
+      '<div class="inv-r"><span class="inv-rl">Invoiced</span><span class="inv-rv">'+fF(inv)+'</span></div>'+
+      '<div class="inv-r"><span class="inv-rl">Total cost</span><span class="inv-rv">'+fF(Math.round(wsCostW))+'</span></div>'+
+      '<hr class="inv-div">'+
+      '<div class="inv-r"><span class="inv-rl">Inv. margin</span><span class="inv-rv '+marCls+'">'+fF(Math.round(mar))+'</span></div>'+
+      '<div class="inv-disc-note '+discCls+'">'+discLabel+'</div>'+
+      '</div>';
+  });
+
+  var totalMarCls=totalInvMar>=0?'gn':'rd';
+  var totalDiscPct=Math.round(totalImplDisc*100);
+
+  document.getElementById('inv-banner').innerHTML=
+    '<div class="inv-top">'+
+      '<div class="inv-title">Invoice summary — as billed</div>'+
+      '<div class="inv-totals">'+
+        '<div class="inv-tot"><div class="itl">Total invoiced</div><div class="itv">'+fF(totalInv)+'</div></div>'+
+        '<div class="inv-tot"><div class="itl">Total cost (incl. burden)</div><div class="itv">'+fF(Math.round(totalCostAll))+'</div></div>'+
+        '<div class="inv-tot"><div class="itl">Inv. margin</div><div class="itv '+totalMarCls+'">'+fF(Math.round(totalInvMar))+'</div></div>'+
+        '<div class="inv-tot"><div class="itl">Inv. margin %</div><div class="itv '+totalMarCls+'">'+Math.round(totalInvMar/totalInv*100)+'%</div></div>'+
+        '<div class="inv-tot"><div class="itl">Implied discount</div><div class="itv">'+(totalDiscPct>=0?totalDiscPct+'%':'Premium '+(Math.abs(totalDiscPct))+'%')+'</div></div>'+
+      '</div>'+
+    '</div>'+
+    '<div class="inv-grid">'+wsCards+'</div>';
+}
+
+
+function calc(d,disc){
+  if(d.subcontract){
+    var sc=d.subcontract_cost||0;
+    return Object.assign({},d,{bill:0,cost_rate:0,gross:sc,net:sc,cost:sc,margin:0,pct:0,billable:true,fmva_rev:sc,fmva_margin:0,isSubcontract:true,ov:null});
+  }
+  var ov=getOverride(d.name,d.ws);
+  // Hours: use override if set, else original
+  var hrs = (ov&&ov.hours!==undefined) ? parseFloat(ov.hours)||0 : d.hours;
+  // Discount: use per-person override if set, else global disc
+  var effDisc = (ov&&ov.disc!==undefined) ? parseFloat(ov.disc)/100 : disc;
+  var bl=BILL_WS.indexOf(d.ws)>=0;
+  var r=getRate(d.cohort,d.level);
+  var eb=bl?r.bill:0;
+  var gr=hrs*eb;
+  var net=bl?gr*(1-effDisc):0;
+  var cost=hrs*r.cost;
+  var mar=net-cost;
+  var pct=net>0?mar/net*100:null;
+  // FMVA: always use raw WIP system gross_revenue — never affected by discount or hour overrides
+  var fr=bl?d.gross_revenue:0;
+  var fm=fr-cost;
+  return Object.assign({},d,{bill:eb,cost_rate:r.cost,gross:gr,net:net,cost:cost,margin:mar,pct:pct,billable:bl,fmva_rev:fr,fmva_margin:fm,hours:hrs,origHours:d.hours,effDisc:effDisc,ov:ov});
+}
+
+function fM(n){if(Math.abs(n)>=1e6)return '$'+(n/1e6).toFixed(2)+'M';if(Math.abs(n)>=1000)return '$'+Math.round(n/1000)+'K';return '$'+Math.round(n);}
+function fF(n){return '$'+Math.round(n).toLocaleString();}
+function fH(n){return n.toFixed(1);}
+function fP(n){return n===null?'—':Math.round(n)+'%';}
+function mc(p){if(p===null)return 'na';if(p>=50)return 'good';if(p>=30)return 'ok';if(p>=0)return 'low';return 'neg';}
+
+function mergeWeeks(rows){
+  var m={};
+  rows.forEach(function(r){
+    Object.keys(r.weeks).forEach(function(wk){
+      if(!m[wk])m[wk]={label:r.weeks[wk].label,hours:0};
+      m[wk].hours+=r.weeks[wk].hours;
+    });
+  });
+  return m;
+}
+
+
+/* ── Per-person overrides: key = name+'|'+ws, val = {hours, disc} ── */
+var overrides = {};
+
+function getOverride(name, ws) {
+  return overrides[name+'|'+ws] || null;
+}
+
+function setOverride(name, ws, field, value) {
+  var key = name+'|'+ws;
+  if(!overrides[key]) overrides[key] = {};
+  overrides[key][field] = value;
+  render();
+}
+
+function resetOverride(name, ws) {
+  delete overrides[name+'|'+ws];
+  render();
+}
+
+function resetAll() {
+  overrides = {};
+  render();
+}
+
+function hasAnyOverrides() {
+  return Object.keys(overrides).length > 0;
+}
+
+/* expand/collapse edit panels (separate from weekly rows) */
+var editOpen = {};
+function toggleEdit(uid, evt) {
+  if(evt) evt.stopPropagation();
+  var panel = document.getElementById('edit-'+uid);
+  if(!panel) return;
+  if(editOpen[uid]) {
+    editOpen[uid] = false;
+    panel.style.display = 'none';
+  } else {
+    editOpen[uid] = true;
+    panel.style.display = '';
+  }
+}
+
+// Track which row IDs are expanded
+var openRows={};
+
+function toggleRow(id){
+  var tr=document.getElementById('tr-'+id);
+  if(!tr)return;
+  if(openRows[id]){
+    openRows[id]=false;
+    tr.classList.remove('open');
+    document.querySelectorAll('[data-group="'+id+'"]').forEach(function(el){el.style.display='none';});
+  } else {
+    openRows[id]=true;
+    tr.classList.add('open');
+    document.querySelectorAll('[data-group="'+id+'"]').forEach(function(el){el.style.display='';});
+  }
+}
+
+function buildWeekRows(weeksObj,numCols,rowClass,uid){
+  var html='';
+  WEEKS.forEach(function(pair){
+    var wk=pair[0],lbl=pair[1];
+    if(!weeksObj[wk]||weeksObj[wk].hours===0)return;
+    var h=weeksObj[wk].hours;
+    var empties='';
+    for(var i=0;i<numCols;i++)empties+='<td></td>';
+    html+='<tr class="'+rowClass+'" data-group="'+uid+'" style="display:none"><td>Wk of '+lbl+'</td>'+empties+'<td class="r">'+fH(h)+'</td></tr>';
+  });
+  return html;
+}
+
+function render(){
+  openRows={};
+  // Show/hide reset banner
+  var hasOv=hasAnyOverrides();
+  document.getElementById('reset-sep').style.display=hasOv?'':'none';
+  document.getElementById('reset-wrap').style.display=hasOv?'':'none';
+  var disc=parseInt(document.getElementById('disc').value)/100;
+  var view=document.getElementById('view').value;
+  var coh=document.getElementById('coh').value;
+
+  var data=RAW.filter(function(d){return coh==='all'||d.cohort===coh;}).map(function(d){return calc(d,disc);});
+
+  var totNet=0,totGross=0,totCost=0,billHrs=0,nbHrs=0,nbCost=0,totFR=0;
+  data.forEach(function(d){
+    if(d.billable){totNet+=d.net;totGross+=d.gross;billHrs+=d.hours;totFR+=d.fmva_rev;}
+    else{nbHrs+=d.hours;nbCost+=d.cost;}
+    totCost+=d.cost;
+  });
+  var totMar=totNet-totCost,totPct=totNet>0?totMar/totNet*100:0;
+  var totFM=totFR-totCost;
+
+  renderInvoice(data);
+  document.getElementById('metrics').innerHTML=
+    '<div class="metric"><div class="mlabel">Billable hours</div><div class="mval">'+fH(billHrs)+'</div><div class="msub">+ '+fH(nbHrs)+' non-billable hrs</div></div>'+
+    '<div class="metric"><div class="mlabel">Gross fees</div><div class="mval">'+fM(totGross)+'</div><div class="msub">Before '+Math.round(disc*100)+'% discount</div></div>'+
+    '<div class="metric"><div class="mlabel">Total cost</div><div class="mval">'+fM(totCost)+'</div><div class="msub">Incl. '+fM(nbCost)+' non-billable</div></div>'+
+    '<div class="metric"><div class="mlabel">Net margin</div><div class="mval '+mc(totPct)+'">'+fP(totPct)+'</div><div class="msub">'+fF(totMar)+' on '+fM(totNet)+' net fees</div></div>'+
+    '<div class="metric"><div class="mlabel">FMVA revenue <span class="fmva-badge">FMVA</span></div><div class="mval" style="color:#4A2080">'+fM(totFR)+'</div><div class="msub">FMVA margin: '+fF(totFM)+'</div></div>';
+
+  var content=document.getElementById('content');
+
+  if(view==='ws'){
+    var html='';
+    WS_ORDER.forEach(function(ws){
+      var wsRows=data.filter(function(d){return d.ws===ws;});
+      if(!wsRows.length)return;
+      var meta=WS_META[ws];
+      var wsH=0,wsNet=0,wsGross=0,wsCost=0,wsFR=0;
+      wsRows.forEach(function(d){wsH+=d.hours;wsNet+=d.net;wsGross+=d.gross;wsCost+=d.cost;wsFR+=d.fmva_rev;});
+      var wsMar=wsNet-wsCost,wsPct=wsNet>0?wsMar/wsNet*100:null,wsFM=wsFR-wsCost;
+      var bl=BILL_WS.indexOf(ws)>=0;
+
+      var statH=bl?
+        '<div class="ws-stat"><div class="ws-stat-lbl">Net fees</div><div class="ws-stat-val">'+fM(wsNet)+'</div></div>'+
+        '<div class="ws-stat"><div class="ws-stat-lbl">Cost</div><div class="ws-stat-val">'+fM(wsCost)+'</div></div>'+
+        '<div class="ws-stat"><div class="ws-stat-lbl">Margin</div><div class="ws-stat-val '+mc(wsPct)+'">'+fP(wsPct)+'</div></div>'+
+        '<div class="ws-stat"><div class="ws-stat-lbl">FMVA Rev</div><div class="ws-stat-val" style="color:#4A2080">'+fM(wsFR)+'</div></div>':
+        '<div class="ws-stat"><div class="ws-stat-lbl">Cost</div><div class="ws-stat-val">'+fM(wsCost)+'</div></div>'+
+        '<div class="ws-stat"><div class="ws-stat-lbl">Fees</div><div class="ws-stat-val na">$0</div></div>';
+
+      var wsId=ws.replace(/\s/g,'_');
+      var body='';
+      wsRows.slice().sort(function(a,b){
+          // 1. Subcontractors always last
+          if(a.subcontract&&!b.subcontract) return 1;
+          if(!a.subcontract&&b.subcontract) return -1;
+          // 2. US Core above USI
+          var aCohort=a.cohort==='USI'?1:0;
+          var bCohort=b.cohort==='USI'?1:0;
+          if(aCohort!==bCohort) return aCohort-bCohort;
+          // 3. Level order (by bill rate descending — higher rate = more senior)
+          var levelOrder=['Partner Or Principal','Managing Director','Senior Manager 2','Senior Manager 1','Manager 1','Senior 2 Or Senior Consultant 2 or In-Ch','Senior 1 Or Senior Consultant 1 or Asst.','Senior 1 Or Senior Consultant 1 or\u00a0Asst.','Intermediate 2 Or Consultant 2','Intermediate 1 Or Consultant 1','Associate 2 Or Analyst 2','Staff/Consultant','Junior Staff/Analyst'];
+          var aLvl=levelOrder.indexOf(a.level);
+          var bLvl=levelOrder.indexOf(b.level);
+          if(aLvl<0) aLvl=99; if(bLvl<0) bLvl=99;
+          if(aLvl!==bLvl) return aLvl-bLvl;
+          // 4. Hours descending as tiebreaker
+          return b.hours-a.hours;
+        }).forEach(function(d,idx){
+        var cb=d.cohort==='USI'?'<span class="badge bu">USI</span>':'<span class="badge bc">US Core</span>';
+        var fn=(d.cohort==='USI'&&d.billable)?'<span class="flat">FLAT</span>':'';
+        var br=d.bill>0?fF(d.bill)+'/hr'+fn:'$0/hr';
+        var rm=d.net-d.cost;
+        var md=d.billable?fP(d.pct):fF(rm);
+        var uid=wsId+'_'+idx;
+        var hasWks=Object.keys(d.weeks).some(function(k){return d.weeks[k].hours!==0;});
+        // person row — use data attribute for onclick, no inline string quoting issues
+        var isModified=!!d.ov;
+        var origH=d.origHours!==undefined?d.origHours:d.hours;
+        var hrsDisp=fH(d.hours)+(isModified&&d.ov&&d.ov.hours!==undefined&&parseFloat(d.ov.hours)!==origH?'<span class="edit-modified">edited</span>':'');
+        var discDisp=d.billable?(isModified&&d.ov&&d.ov.disc!==undefined?'<span style="color:var(--dl-green)">'+Math.round(d.ov.disc)+'%</span>':Math.round(disc*100)+'%'):'—';
+        body+='<tr class="p-row'+(hasWks?' has-weeks':'')+(isModified?' modified':'')+'" id="tr-'+uid+'" data-uid="'+uid+'">';
+        body+='<td style="font-weight:700">'+d.name+(d.billable?'<span class="edit-icon" data-edit="'+uid+'" title="Edit hours &amp; discount">&#9998;</span>':'')+'</td>';
+        body+='<td class="dim" style="font-size:12px">'+d.level+'</td>';
+        body+='<td>'+cb+'</td>';
+        body+='<td class="r">'+hrsDisp+'</td>';
+        body+='<td class="r dim">'+br+'</td>';
+        body+='<td class="r dim">$'+d.cost_rate.toLocaleString()+'/hr</td>';
+        body+='<td class="r dim">'+(d.gross>0?fF(d.gross):'$0')+'</td>';
+        body+='<td class="r" style="font-weight:700">'+(d.net>0?fF(d.net):'$0')+'</td>';
+        body+='<td class="r dim">'+fF(d.cost)+'</td>';
+        body+='<td class="r '+mc(d.billable?d.pct:null)+'">'+md+'&nbsp;<span style="font-size:10px;color:var(--dl-muted)">'+discDisp+'</span></td>';
+        body+='<td class="fv">'+(d.billable?fF(d.fmva_rev):'$0')+'</td>';
+        body+='<td class="fv">'+(d.billable?fF(d.fmva_margin):'—')+'</td>';
+        body+='</tr>';
+        // Edit panel row (hidden by default)
+        if(d.billable&&!d.isSubcontract){
+          var curHrs=(d.ov&&d.ov.hours!==undefined)?d.ov.hours:origH;
+          var curDisc=(d.ov&&d.ov.disc!==undefined)?d.ov.disc:Math.round(disc*100);
+          var safeEditId=uid;
+          var origLabel=d.ov&&d.ov.hours!==undefined?'(orig: '+fH(origH)+')':'';
+          var resetBtn=isModified?'<button class="edit-reset" data-resetname="'+d.name+'" data-resetws="'+d.ws+'">Reset person</button>':'';
+          body+='<tr class="edit-row" id="edit-'+safeEditId+'" style="display:none"><td colspan="12">';
+          body+='<div class="edit-panel">';
+          body+='<span class="edit-hint">Editing: <strong>'+d.name+'</strong></span>';
+          body+='<div class="edit-sep"></div>';
+          body+='<div class="edit-field">';
+          body+='<span class="edit-lbl">Hours</span>';
+          body+='<input class="edit-input" type="number" id="hrsinp-'+safeEditId+'" value="'+curHrs+'" min="0" step="0.5" data-name="'+d.name+'" data-ws="'+d.ws+'" data-field="hours">';
+          body+='<span class="edit-unit">hrs</span>';
+          body+=(origLabel?'<span style="font-size:10px;color:var(--dl-muted)">'+origLabel+'</span>':'');
+          body+='</div>';
+          body+='<div class="edit-sep"></div>';
+          body+='<div class="edit-field">';
+          body+='<span class="edit-lbl">Discount rate</span>';
+          body+='<input class="edit-input" type="number" id="discinp-'+safeEditId+'" value="'+curDisc+'" min="0" max="100" step="1" data-name="'+d.name+'" data-ws="'+d.ws+'" data-field="disc">';
+          body+='<span class="edit-unit">%</span>';
+          body+='</div>';
+          body+=(isModified?'<div class="edit-sep"></div>'+resetBtn:'');
+          body+='</div></td></tr>';
+        }
+        if(hasWks) body+=buildWeekRows(d.weeks,8,'wk-row',uid);
+      });
+
+      // subtotal with weekly expand
+      if(wsRows.length>1){
+        var stId=wsId+'_sub';
+        var mWks=mergeWeeks(wsRows);
+        body+='<tr class="sub-row" id="tr-'+stId+'" data-uid="'+stId+'">'+
+          '<td>Subtotal</td><td></td><td></td>'+
+          '<td class="r">'+fH(wsH)+'</td><td></td><td></td>'+
+          '<td class="r">'+fF(wsGross)+'</td>'+
+          '<td class="r">'+fF(wsNet)+'</td>'+
+          '<td class="r">'+fF(wsCost)+'</td>'+
+          '<td class="r '+mc(bl?wsPct:null)+'">'+(bl?fP(wsPct):fF(wsMar))+'</td>'+
+          '<td class="fv">'+(bl?fF(wsFR):'$0')+'</td>'+
+          '<td class="fv">'+(bl?fF(wsFM):'—')+'</td>'+
+          '</tr>';
+        body+=buildWeekRows(mWks,8,'wks-row',stId);
+      }
+
+      html+='<div class="ws-section" id="ws-'+wsId+'">'+
+        '<div class="ws-hdr" onclick="toggleWs(\'ws-'+wsId+'\')">'+
+          '<div class="wsl">'+
+            '<span class="ws-tag '+meta.tag+'">'+meta.short+'</span>'+
+            '<span class="ws-name">'+meta.label+'</span>'+
+            '<span class="ws-hrs">'+fH(wsH)+' hrs</span>'+
+          '</div>'+
+          '<div class="wsr">'+statH+'<span class="chev">▼</span></div>'+
+        '</div>'+
+        '<div class="ws-body">'+
+          '<table>'+
+            '<thead><tr>'+
+              '<th>Name</th><th>Level</th><th>Cohort</th>'+
+              '<th class="r">Hours</th><th class="r">Bill rate</th><th class="r">Cost rate</th>'+
+              '<th class="r">Gross fees</th><th class="r">Net fees</th><th class="r">Cost</th><th class="r">Margin</th>'+
+              '<th class="r fc">FMVA Revenue</th><th class="r fc">FMVA Margin</th>'+
+            '</tr></thead>'+
+            '<tbody>'+body+'</tbody>'+
+          '</table>'+
+        '</div>'+
+      '</div>';
+    });
+
+    var mct=mc(totPct);
+    html+='<div class="grand-total">'+
+      '<div class="gt-lbl">Total — all workstreams</div>'+
+      '<div class="gt-stats">'+
+        '<div class="gt-stat"><div class="l">Gross fees</div><div class="v">'+fF(totGross)+'</div></div>'+
+        '<div class="gt-stat"><div class="l">Net fees</div><div class="v">'+fF(totNet)+'</div></div>'+
+        '<div class="gt-stat"><div class="l">Total cost</div><div class="v">'+fF(totCost)+'</div></div>'+
+        '<div class="gt-stat"><div class="l">Net margin $</div><div class="v '+mct+'">'+fF(totMar)+'</div></div>'+
+        '<div class="gt-stat"><div class="l">Net margin %</div><div class="v '+mct+'">'+fP(totPct)+'</div></div>'+
+        '<div class="gt-stat"><div class="l">FMVA Revenue</div><div class="v fv">'+fF(totFR)+'</div></div>'+
+        '<div class="gt-stat"><div class="l">FMVA Margin</div><div class="v fv">'+fF(totFM)+'</div></div>'+
+      '</div>'+
+    '</div>';
+
+    content.innerHTML=html;
+
+    // Attach weekly expand handlers (click on row, but not on edit icon)
+    document.querySelectorAll('[data-uid]').forEach(function(el){
+      var uid=el.getAttribute('data-uid');
+      el.addEventListener('click',function(e){
+        if(e.target.getAttribute('data-edit')||e.target.getAttribute('data-resetname')) return;
+        toggleRow(uid);
+      });
+    });
+    // Edit icon clicks
+    document.querySelectorAll('[data-edit]').forEach(function(el){
+      el.addEventListener('click',function(e){
+        e.stopPropagation();
+        toggleEdit(el.getAttribute('data-edit'),e);
+      });
+    });
+    // Input change handlers (hours and disc) — use event delegation on content div
+    document.querySelectorAll('.edit-input').forEach(function(inp){
+      inp.addEventListener('change',function(){
+        setOverride(inp.getAttribute('data-name'),inp.getAttribute('data-ws'),inp.getAttribute('data-field'),inp.value);
+      });
+    });
+    // Reset person buttons
+    document.querySelectorAll('[data-resetname]').forEach(function(btn){
+      btn.addEventListener('click',function(e){
+        e.stopPropagation();
+        resetOverride(btn.getAttribute('data-resetname'),btn.getAttribute('data-resetws'));
+      });
+    });
+    // Restore open edit panels after re-render
+    Object.keys(editOpen).forEach(function(uid){
+      if(editOpen[uid]){
+        var p=document.getElementById('edit-'+uid);
+        if(p) p.style.display='';
+      }
+    });
+
+  } else {
+    // Person view
+    var people={};
+    data.forEach(function(d){
+      if(!people[d.name])people[d.name]={name:d.name,level:d.level,cohort:d.cohort,rows:[]};
+      people[d.name].rows.push(d);
+    });
+    var sorted=Object.values(people).sort(function(a,b){
+      // 1. US Core above USI
+      var aCohort=a.cohort==='USI'?1:0;
+      var bCohort=b.cohort==='USI'?1:0;
+      if(aCohort!==bCohort) return aCohort-bCohort;
+      // 2. Level order
+      var levelOrder=['Partner Or Principal','Managing Director','Senior Manager 2','Senior Manager 1','Manager 1','Senior 2 Or Senior Consultant 2 or In-Ch','Senior 1 Or Senior Consultant 1 or Asst.','Senior 1 Or Senior Consultant 1 or\u00a0Asst.','Intermediate 2 Or Consultant 2','Intermediate 1 Or Consultant 1','Associate 2 Or Analyst 2','Staff/Consultant','Junior Staff/Analyst'];
+      var aLvl=levelOrder.indexOf(a.level); if(aLvl<0) aLvl=99;
+      var bLvl=levelOrder.indexOf(b.level); if(bLvl<0) bLvl=99;
+      if(aLvl!==bLvl) return aLvl-bLvl;
+      // 3. Billable hours descending as tiebreaker
+      var ah=a.rows.filter(function(r){return r.billable;}).reduce(function(s,r){return s+r.hours;},0);
+      var bh=b.rows.filter(function(r){return r.billable;}).reduce(function(s,r){return s+r.hours;},0);
+      return bh-ah;
+    });
+
+    function wsH(ws){return data.filter(function(d){return d.ws===ws;}).reduce(function(s,d){return s+d.hours;},0);}
+
+    var body='';
+    sorted.forEach(function(p,pidx){
+      var byWs={};
+      p.rows.forEach(function(r){byWs[r.ws]=(byWs[r.ws]||0)+r.hours;});
+      var pNet=0,pCost=0,pFR=0;
+      p.rows.forEach(function(r){if(r.billable){pNet+=r.net;pFR+=r.fmva_rev;}pCost+=r.cost;});
+      var pMar=pNet-pCost,pPct=pNet>0?pMar/pNet*100:null,pFM=pFR-pCost;
+      var totH=p.rows.reduce(function(s,r){return s+r.hours;},0);
+      var cb=p.cohort==='USI'?'<span class="badge bu">USI</span>':'<span class="badge bc">US Core</span>';
+      var mWks=mergeWeeks(p.rows);
+      var hasWks=Object.values(mWks).some(function(v){return v.hours!==0;});
+      var uid='pv_'+pidx;
+
+      var pvMod=p.rows.some(function(r){return !!r.ov;});
+      body+='<tr class="p-row'+(hasWks?' has-weeks':'')+(pvMod?' modified':'')+'" id="tr-'+uid+'" data-uid="'+uid+'">'+
+        '<td style="font-weight:700">'+p.name+' <span class="edit-icon" data-pvhint="1" title="Switch to Workstream view to edit">&#9998;</span></td>'+
+        '<td class="dim" style="font-size:12px">'+p.level+'</td>'+
+        '<td>'+cb+'</td>'+
+        '<td class="r">'+(byWs['FDD']?fH(byWs['FDD']):'—')+'</td>'+
+        '<td class="r">'+(byWs['CPDD']?fH(byWs['CPDD']):'—')+'</td>'+
+        '<td class="r">'+(byWs['ODD']?fH(byWs['ODD']):'—')+'</td>'+
+        '<td class="r">'+(byWs['HRDD']?fH(byWs['HRDD']):'—')+'</td>'+
+        '<td class="r">'+(byWs['Tax Diligence']?fH(byWs['Tax Diligence']):'—')+'</td>'+
+        '<td class="r">'+(byWs['Tax Structuring']?fH(byWs['Tax Structuring']):'—')+'</td>'+
+        '<td class="r dim">'+(byWs['Non-Billable']?fH(byWs['Non-Billable']):'—')+'</td>'+
+        '<td class="r" style="font-weight:700">'+fH(totH)+'</td>'+
+        '<td class="r" style="font-weight:700">'+(pNet>0?fF(pNet):'$0')+'</td>'+
+        '<td class="r dim">'+fF(pCost)+'</td>'+
+        '<td class="r '+mc(pPct)+'">'+fP(pPct)+'</td>'+
+        '<td class="fv">'+(pFR>0?fF(pFR):'$0')+'</td>'+
+        '<td class="fv">'+(pFR>0?fF(pFM):'—')+'</td>'+
+        '</tr>';
+      if(hasWks) body+=buildWeekRows(mWks,12,'wk-row',uid);
+    });
+
+    // Total row
+    var tMWks=mergeWeeks(data);
+    var hasTotal=Object.values(tMWks).some(function(v){return v.hours!==0;});
+    var tid='pv_total';
+    body+='<tr class="sub-row" id="tr-'+tid+'" data-uid="'+tid+'">'+
+      '<td>Total</td><td></td><td></td>'+
+      '<td class="r">'+fH(wsH('FDD'))+'</td>'+
+      '<td class="r">'+fH(wsH('CPDD'))+'</td>'+
+      '<td class="r">'+fH(wsH('ODD'))+'</td>'+
+      '<td class="r">'+fH(wsH('HRDD'))+'</td>'+
+      '<td class="r">'+fH(wsH('Tax Diligence'))+'</td>'+
+      '<td class="r">'+fH(wsH('Tax Structuring'))+'</td>'+
+      '<td class="r">'+fH(wsH('Non-Billable'))+'</td>'+
+      '<td class="r">'+fH(data.reduce(function(s,d){return s+d.hours;},0))+'</td>'+
+      '<td class="r">'+fF(totNet)+'</td>'+
+      '<td class="r">'+fF(totCost)+'</td>'+
+      '<td class="r '+mc(totPct)+'">'+fP(totPct)+'</td>'+
+      '<td class="fv">'+fF(totFR)+'</td>'+
+      '<td class="fv">'+fF(totFM)+'</td>'+
+      '</tr>';
+    if(hasTotal) body+=buildWeekRows(tMWks,12,'wks-row',tid);
+
+    content.innerHTML='<div class="ptw"><div style="overflow-x:auto">'+
+      '<table>'+
+        '<thead><tr>'+
+          '<th>Name</th><th>Level</th><th>Cohort</th>'+
+          '<th class="r">FDD</th><th class="r">CPDD</th><th class="r">ODD</th><th class="r">HRDD</th>'+
+          '<th class="r">Tax Dilig.</th><th class="r">Tax Struct.</th><th class="r">Non-Bill.</th>'+
+          '<th class="r">Total hrs</th><th class="r">Net fees</th><th class="r">Total cost</th><th class="r">Margin %</th>'+
+          '<th class="r fc">FMVA Revenue</th><th class="r fc">FMVA Margin</th>'+
+        '</tr></thead>'+
+        '<tbody>'+body+'</tbody>'+
+      '</table>'+
+    '</div></div>';
+
+    // Attach handlers
+    document.querySelectorAll('[data-uid]').forEach(function(el){
+      var uid=el.getAttribute('data-uid');
+      el.addEventListener('click',function(){toggleRow(uid);});
+    });
+  }
+}
+
+function toggleWs(id){
+  document.getElementById(id).classList.toggle('collapsed');
+}
+
+  // Public API
+  return {
+    init: function() {
+      // Reset state on each mount
+      overrides = {};
+      openRows = {};
+      editOpen = {};
+      render();
+    },
+    destroy: function() {
+      // nothing needed — DOM is replaced on next mount
+    }
+  };
+})();
+
+
+/* ══ PROJECT INTREPID MODULE ══ */
+
+// ─────────────────────────────────────────────
+// PROJECT MODULE: INTREPID
+// ─────────────────────────────────────────────
+window.Projects = window.Projects || {};
+window.Projects['intrepid'] = (function() {
+
+var USI_BILL=450;
+var USC_BILL={'Partner Or Principal':1763,'Managing Director':1763,'Senior Manager 2':1590,'Senior Manager 1':1590,'Manager 1':1501,'Senior 2 Or Senior Consultant 2 or In-Ch':1300,'Senior 1 Or Senior Consultant 1 or Asst.':1300,'Senior 1 Or Senior Consultant 1 or\u00a0Asst.':1300,'Intermediate 1 Or Consultant 1':1155,'Intermediate 2 Or Consultant 2':1155,'Associate 2 Or Analyst 2':1071,'Staff/Consultant':1155,'Junior Staff/Analyst':1071};
+var USI_COST={'Managing Director':284,'Senior Manager 1':77,'Manager 1':45,'Senior 1 Or Senior Consultant 1 or Asst.':30,'Senior 1 Or Senior Consultant 1 or\u00a0Asst.':30,'Senior 2 Or Senior Consultant 2 or In-Ch':30,'Intermediate 2 Or Consultant 2':30,'Intermediate 1 Or Consultant 1':19,'Staff/Consultant':19,'Junior Staff/Analyst':4};
+var USC={'Partner Or Principal':{bill:1763,cost:750},'Managing Director':{bill:1763,cost:891},'Senior Manager 2':{bill:1590,cost:294},'Senior Manager 1':{bill:1590,cost:294},'Manager 1':{bill:1501,cost:179},'Senior 2 Or Senior Consultant 2 or In-Ch':{bill:1300,cost:147},'Senior 1 Or Senior Consultant 1 or Asst.':{bill:1300,cost:147},'Senior 1 Or Senior Consultant 1 or\u00a0Asst.':{bill:1300,cost:147},'Intermediate 1 Or Consultant 1':{bill:1155,cost:88},'Intermediate 2 Or Consultant 2':{bill:1155,cost:88},'Associate 2 Or Analyst 2':{bill:1071,cost:83},'Staff/Consultant':{bill:1155,cost:88},'Junior Staff/Analyst':{bill:1071,cost:83}};
+var LEVEL_ORDER=['Partner Or Principal','Managing Director','Senior Manager 2','Senior Manager 1','Manager 1','Senior 2 Or Senior Consultant 2 or In-Ch','Senior 1 Or Senior Consultant 1 or Asst.','Senior 1 Or Senior Consultant 1 or\u00a0Asst.','Intermediate 2 Or Consultant 2','Intermediate 1 Or Consultant 1','Associate 2 Or Analyst 2','Staff/Consultant','Junior Staff/Analyst'];
+
+function getRate(cohort,level){
+  if(cohort==='USI') return {bill:USI_BILL,cost:USI_COST[level]||30};
+  return USC[level]||{bill:0,cost:0};
+}
+
+var BILL_WS=['FDD','Tax Diligence','Tax Modeling','Tax Structuring'];
+var WS_META={
+  'FDD':             {tag:'tag-fdd', label:'Financial Due Diligence', short:'FDD'},
+  'Tax Diligence':   {tag:'tag-taxd',label:'Tax Diligence',           short:'Tax Dilig.'},
+  'Tax Modeling':    {tag:'tag-taxm',label:'Tax Modeling',            short:'Tax Model.'},
+  'Tax Structuring': {tag:'tag-taxs',label:'Tax Structuring',         short:'Tax Struct.'},
+  'Non-Billable':    {tag:'tag-nb',  label:'Non-Billable',            short:'Non-Bill.'}};
+var WS_ORDER=['FDD','Tax Diligence','Tax Modeling','Tax Structuring','Non-Billable'];
+
+var WEEKS=[['2026-01-19','Jan 19'],['2026-01-26','Jan 26'],['2026-02-02','Feb 2'],['2026-02-09','Feb 9'],['2026-02-16','Feb 16'],['2026-02-23','Feb 23'],['2026-03-02','Mar 2'],['2026-03-16','Mar 16'],['2026-03-23','Mar 23'],['2026-03-30','Mar 30'],['2026-04-06','Apr 6'],['2026-04-13','Apr 13']];
+
+var RAW=[{"name":"Anvari, Burke","ws":"FDD","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"US Core","hours":32.0,"gross_revenue":18176.0,"weeks":{"2026-01-19":{"label":"Jan 19","hours":16.0},"2026-03-16":{"label":"Mar 16","hours":5.0},"2026-03-23":{"label":"Mar 23","hours":10.0},"2026-03-30":{"label":"Mar 30","hours":0.5},"2026-04-06":{"label":"Apr 6","hours":0.5}}},{"name":"Anvari, Burke","ws":"Non-Billable","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"US Core","hours":187.0,"gross_revenue":106216.0,"weeks":{"2026-01-19":{"label":"Jan 19","hours":8.0},"2026-02-02":{"label":"Feb 2","hours":17.0},"2026-02-09":{"label":"Feb 9","hours":38.0},"2026-02-16":{"label":"Feb 16","hours":36.0},"2026-03-02":{"label":"Mar 2","hours":37.5},"2026-03-16":{"label":"Mar 16","hours":25.5},"2026-03-23":{"label":"Mar 23","hours":25.0}}},{"name":"Banerjee, Ahana","ws":"FDD","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"USI","hours":25.75,"gross_revenue":10763.5,"weeks":{"2026-01-19":{"label":"Jan 19","hours":16.0},"2026-01-26":{"label":"Jan 26","hours":4.0},"2026-03-16":{"label":"Mar 16","hours":2.0},"2026-03-23":{"label":"Mar 23","hours":1.5},"2026-03-30":{"label":"Mar 30","hours":2.25}}},{"name":"Bible, Charles","ws":"FDD","level":"Partner Or Principal","cohort":"US Core","hours":5.0,"gross_revenue":4405.0,"weeks":{"2026-02-23":{"label":"Feb 23","hours":2.0},"2026-03-02":{"label":"Mar 2","hours":3.0}}},{"name":"Bose, Parama","ws":"FDD","level":"Intermediate 2 Or Consultant 2","cohort":"USI","hours":6.5,"gross_revenue":2281.5,"weeks":{"2026-03-16":{"label":"Mar 16","hours":4.0},"2026-03-23":{"label":"Mar 23","hours":2.5}}},{"name":"Chapman, Wesley","ws":"Tax Structuring","level":"Partner Or Principal","cohort":"US Core","hours":16.5,"gross_revenue":14536.5,"weeks":{"2026-01-19":{"label":"Jan 19","hours":4.5},"2026-01-26":{"label":"Jan 26","hours":1.0},"2026-02-02":{"label":"Feb 2","hours":0.5},"2026-02-09":{"label":"Feb 9","hours":5.0},"2026-02-16":{"label":"Feb 16","hours":4.5},"2026-02-23":{"label":"Feb 23","hours":1.0}}},{"name":"Chapman, Wesley","ws":"Tax Diligence","level":"Partner Or Principal","cohort":"US Core","hours":12.0,"gross_revenue":10572.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":1.0},"2026-03-23":{"label":"Mar 23","hours":3.0},"2026-03-30":{"label":"Mar 30","hours":1.5},"2026-04-06":{"label":"Apr 6","hours":5.5},"2026-04-13":{"label":"Apr 13","hours":1.0}}},{"name":"Kumar, Sajal","ws":"FDD","level":"Senior 2 Or Senior Consultant 2 or In-Ch","cohort":"USI","hours":1.0,"gross_revenue":418.0,"weeks":{"2026-01-19":{"label":"Jan 19","hours":1.0}}},{"name":"Larkin, Matthew","ws":"Tax Diligence","level":"Senior Manager 1","cohort":"US Core","hours":13.0,"gross_revenue":10049.0,"weeks":{"2026-02-23":{"label":"Feb 23","hours":6.5},"2026-03-02":{"label":"Mar 2","hours":1.0},"2026-04-06":{"label":"Apr 6","hours":5.5}}},{"name":"Mehta, Niharika","ws":"FDD","level":"Manager 1","cohort":"USI","hours":9.0,"gross_revenue":4347.0,"weeks":{"2026-03-16":{"label":"Mar 16","hours":2.0},"2026-03-23":{"label":"Mar 23","hours":4.0},"2026-03-30":{"label":"Mar 30","hours":3.0}}},{"name":"Perez Gonzalez, Brenda","ws":"FDD","level":"Senior 1 Or Senior Consultant 1 or\u00a0Asst.","cohort":"US Core","hours":17.0,"gross_revenue":9656.0,"weeks":{"2026-01-19":{"label":"Jan 19","hours":17.0}}},{"name":"Saraf, Mihir Kanhaiya","ws":"FDD","level":"Intermediate 1 Or Consultant 1","cohort":"USI","hours":10.0,"gross_revenue":3510.0,"weeks":{"2026-01-19":{"label":"Jan 19","hours":7.5},"2026-03-23":{"label":"Mar 23","hours":1.0},"2026-03-30":{"label":"Mar 30","hours":1.5}}},{"name":"Stevens, Blake","ws":"FDD","level":"Senior Manager 1","cohort":"US Core","hours":24.5,"gross_revenue":18938.5,"weeks":{"2026-01-19":{"label":"Jan 19","hours":12.0},"2026-01-26":{"label":"Jan 26","hours":4.5},"2026-02-02":{"label":"Feb 2","hours":3.0},"2026-02-09":{"label":"Feb 9","hours":2.0},"2026-02-23":{"label":"Feb 23","hours":1.0},"2026-03-16":{"label":"Mar 16","hours":2.0}}},{"name":"Stevens, Blake","ws":"Non-Billable","level":"Senior Manager 1","cohort":"US Core","hours":97.0,"gross_revenue":74981.0,"weeks":{"2026-02-02":{"label":"Feb 2","hours":34.0},"2026-02-09":{"label":"Feb 9","hours":24.0},"2026-02-16":{"label":"Feb 16","hours":19.0},"2026-02-23":{"label":"Feb 23","hours":20.0}}},{"name":"Wright, Chase","ws":"FDD","level":"Managing Director","cohort":"US Core","hours":7.9,"gross_revenue":6959.9,"weeks":{"2026-01-19":{"label":"Jan 19","hours":2.2},"2026-01-26":{"label":"Jan 26","hours":3.0},"2026-02-02":{"label":"Feb 2","hours":1.0},"2026-02-09":{"label":"Feb 9","hours":0.5},"2026-04-06":{"label":"Apr 6","hours":1.2}}}];
+
+/* ── Invoice data (pending — not yet invoiced) ── */
+var INVOICE_PENDING = true;
+var INVOICE = {};
+
+/* ── Per-person overrides ── */
+var overrides={};
+function getOverride(name,ws){return overrides[name+'|'+ws]||null;}
+function setOverride(name,ws,field,value){var k=name+'|'+ws;if(!overrides[k])overrides[k]={};overrides[k][field]=value;render();}
+function resetOverride(name,ws){delete overrides[name+'|'+ws];render();}
+function resetAll(){overrides={};render();}
+function hasAnyOverrides(){return Object.keys(overrides).length>0;}
+var editOpen={};
+function toggleEdit(uid,evt){if(evt)evt.stopPropagation();var p=document.getElementById('edit-'+uid);if(!p)return;if(editOpen[uid]){editOpen[uid]=false;p.style.display='none';}else{editOpen[uid]=true;p.style.display='';}}
+
+/* ── Track expanded weekly rows ── */
+var openRows={};
+function toggleRow(id){
+  var tr=document.getElementById('tr-'+id);
+  if(!tr)return;
+  if(openRows[id]){openRows[id]=false;tr.classList.remove('open');document.querySelectorAll('[data-group="'+id+'"]').forEach(function(el){el.style.display='none';});}
+  else{openRows[id]=true;tr.classList.add('open');document.querySelectorAll('[data-group="'+id+'"]').forEach(function(el){el.style.display='';});}
+}
+
+function calc(d,disc){
+  var ov=getOverride(d.name,d.ws);
+  var hrs=(ov&&ov.hours!==undefined)?parseFloat(ov.hours)||0:d.hours;
+  var effDisc=(ov&&ov.disc!==undefined)?parseFloat(ov.disc)/100:disc;
+  var bl=BILL_WS.indexOf(d.ws)>=0;
+  var r=getRate(d.cohort,d.level);
+  var eb=bl?r.bill:0;
+  var gr=hrs*eb;
+  var net=bl?gr*(1-effDisc):0;
+  var cost=hrs*r.cost;
+  var mar=net-cost;
+  var pct=net>0?mar/net*100:null;
+  var fr=bl?d.gross_revenue:0;
+  var fm=fr-cost;
+  return Object.assign({},d,{bill:eb,cost_rate:r.cost,gross:gr,net:net,cost:cost,margin:mar,pct:pct,billable:bl,fmva_rev:fr,fmva_margin:fm,hours:hrs,origHours:d.hours,effDisc:effDisc,ov:ov});
+}
+
+function fM(n){if(Math.abs(n)>=1e6)return '$'+(n/1e6).toFixed(2)+'M';if(Math.abs(n)>=1000)return '$'+Math.round(n/1000)+'K';return '$'+Math.round(n);}
+function fF(n){return '$'+Math.round(n).toLocaleString();}
+function fH(n){return n.toFixed(1);}
+function fP(n){return n===null?'—':Math.round(n)+'%';}
+function mc(p){if(p===null)return 'na';if(p>=50)return 'good';if(p>=30)return 'ok';if(p>=0)return 'low';return 'neg';}
+
+function mergeWeeks(rows){
+  var m={};
+  rows.forEach(function(r){Object.keys(r.weeks).forEach(function(wk){if(!m[wk])m[wk]={label:r.weeks[wk].label,hours:0};m[wk].hours+=r.weeks[wk].hours;});});
+  return m;
+}
+
+function buildWeekRows(weeksObj,numCols,rowClass,uid){
+  var html='';
+  WEEKS.forEach(function(pair){
+    var wk=pair[0],lbl=pair[1];
+    if(!weeksObj[wk]||weeksObj[wk].hours===0)return;
+    var h=weeksObj[wk].hours;
+    var empties='';for(var i=0;i<numCols;i++)empties+='<td></td>';
+    html+='<tr class="'+rowClass+'" data-group="'+uid+'" style="display:none"><td>Wk of '+lbl+'</td>'+empties+'<td class="r">'+fH(h)+'</td></tr>';
+  });
+  return html;
+}
+
+function sortRows(rows){
+  return rows.slice().sort(function(a,b){
+    var ac=a.cohort==='USI'?1:0, bc=b.cohort==='USI'?1:0;
+    if(ac!==bc) return ac-bc;
+    var al=LEVEL_ORDER.indexOf(a.level); if(al<0)al=99;
+    var bl=LEVEL_ORDER.indexOf(b.level); if(bl<0)bl=99;
+    if(al!==bl) return al-bl;
+    return b.hours-a.hours;
+  });
+}
+
+function renderInvoice(data){
+  var banner=document.getElementById('inv-banner');
+  if(INVOICE_PENDING){
+    banner.innerHTML='<div class="inv-top"><div class="inv-title">Invoice summary — as billed</div></div>'+
+      '<div class="inv-pending">No invoice data recorded yet for this engagement. Invoice summary will populate once billing is completed.</div>';
+    return;
+  }
+  // Compute gross bill at 0% discount
+  var gb={};
+  data.forEach(function(d){if(!d.billable)return;var br=d.cohort==='USI'?450:(USC_BILL[d.level]||0);gb[d.ws]=(gb[d.ws]||0)+d.origHours*br;});
+  var wsCost={};
+  data.forEach(function(d){wsCost[d.ws]=(wsCost[d.ws]||0)+d.origHours*getRate(d.cohort,d.level).cost;});
+  // Add any expenses
+  Object.keys(INVOICE).forEach(function(ws){if(INVOICE[ws].exp)wsCost[ws]=(wsCost[ws]||0)+INVOICE[ws].exp;});
+  var totalInv=0,totalGross=0,totalCost=0;
+  Object.keys(INVOICE).forEach(function(ws){totalInv+=INVOICE[ws].inv||0;});
+  Object.values(gb).forEach(function(v){totalGross+=v;});
+  Object.values(wsCost).forEach(function(v){totalCost+=v;});
+  var totalMar=totalInv-totalCost,totalDisc=(totalGross-totalInv)/totalGross;
+  var wsKeys=Object.keys(INVOICE);
+  var cols=Math.min(wsKeys.length,5);
+  var wsCards='';
+  wsKeys.forEach(function(ws){
+    var inv=INVOICE[ws].inv||0;
+    var cost=(wsCost[ws]||0)+(INVOICE[ws].exp||0);
+    var gross=gb[ws]||0;
+    var mar=inv-cost;
+    var disc=gross>0?(gross-inv)/gross:0;
+    var discPct=Math.round(disc*100);
+    var isPremium=disc<0;
+    var marCls=mar>=0?'gn':'rd';
+    var discLabel=isPremium?'Premium vs. standard: '+Math.abs(discPct)+'%':'Implied discount: '+discPct+'%';
+    var meta=WS_META[ws]||{tag:'tag-nb',short:ws};
+    wsCards+='<div class="inv-ws">'+
+      '<div class="inv-ws-tag '+meta.tag+'">'+meta.short+'</div>'+
+      '<div class="inv-r"><span class="inv-rl">Invoiced</span><span class="inv-rv">'+fF(inv)+'</span></div>'+
+      '<div class="inv-r"><span class="inv-rl">Total cost</span><span class="inv-rv">'+fF(Math.round(cost))+'</span></div>'+
+      '<hr class="inv-div">'+
+      '<div class="inv-r"><span class="inv-rl">Inv. margin</span><span class="inv-rv '+marCls+'">'+fF(Math.round(mar))+'</span></div>'+
+      '<div class="inv-disc-note'+(isPremium?' premium':'')+'">'+discLabel+'</div></div>';
+  });
+  var mc2=totalMar>=0?'gn':'';
+  banner.innerHTML='<div class="inv-top">'+
+    '<div class="inv-title">Invoice summary — as billed</div>'+
+    '<div class="inv-totals">'+
+      '<div class="inv-tot"><div class="itl">Total invoiced</div><div class="itv">'+fF(totalInv)+'</div></div>'+
+      '<div class="inv-tot"><div class="itl">Total cost</div><div class="itv">'+fF(Math.round(totalCost))+'</div></div>'+
+      '<div class="inv-tot"><div class="itl">Inv. margin</div><div class="itv '+mc2+'">'+fF(Math.round(totalMar))+'</div></div>'+
+      '<div class="inv-tot"><div class="itl">Inv. margin %</div><div class="itv '+mc2+'">'+Math.round(totalMar/totalInv*100)+'%</div></div>'+
+      '<div class="inv-tot"><div class="itl">Implied discount</div><div class="itv">'+(Math.round(totalDisc*100)>=0?Math.round(totalDisc*100)+'%':'Premium '+Math.abs(Math.round(totalDisc*100))+'%')+'</div></div>'+
+    '</div></div>'+
+    '<div class="inv-grid" style="grid-template-columns:repeat('+cols+',1fr)">'+wsCards+'</div>';
+}
+
+function render(){
+  openRows={};
+  var hasOv=hasAnyOverrides();
+  document.getElementById('reset-sep').style.display=hasOv?'':'none';
+  document.getElementById('reset-wrap').style.display=hasOv?'':'none';
+  var disc=parseInt(document.getElementById('disc').value)/100;
+  var view=document.getElementById('view').value;
+  var coh=document.getElementById('coh').value;
+  var data=RAW.filter(function(d){return coh==='all'||d.cohort===coh;}).map(function(d){return calc(d,disc);});
+
+  var totNet=0,totGross=0,totCost=0,billHrs=0,nbHrs=0,nbCost=0,totFR=0;
+  data.forEach(function(d){
+    if(d.billable){totNet+=d.net;totGross+=d.gross;billHrs+=d.hours;totFR+=d.fmva_rev;}
+    else{nbHrs+=d.hours;nbCost+=d.cost;}
+    totCost+=d.cost;
+  });
+  var totMar=totNet-totCost,totPct=totNet>0?totMar/totNet*100:0,totFM=totFR-totCost;
+
+  renderInvoice(data);
+
+  document.getElementById('metrics').innerHTML=
+    '<div class="metric"><div class="mlabel">Billable hours</div><div class="mval">'+fH(billHrs)+'</div><div class="msub">+ '+fH(nbHrs)+' non-billable hrs</div></div>'+
+    '<div class="metric"><div class="mlabel">Gross fees</div><div class="mval">'+fM(totGross)+'</div><div class="msub">Before '+Math.round(disc*100)+'% discount</div></div>'+
+    '<div class="metric"><div class="mlabel">Total cost</div><div class="mval">'+fM(totCost)+'</div><div class="msub">Incl. '+fM(nbCost)+' non-billable</div></div>'+
+    '<div class="metric"><div class="mlabel">Net margin</div><div class="mval '+mc(totPct)+'">'+fP(totPct)+'</div><div class="msub">'+fF(totMar)+' on '+fM(totNet)+' net fees</div></div>'+
+    '<div class="metric"><div class="mlabel">FMVA revenue <span class="fmva-badge">FMVA</span></div><div class="mval" style="color:#4A2080">'+fM(totFR)+'</div><div class="msub">FMVA margin: '+fF(totFM)+'</div></div>';
+
+  var content=document.getElementById('content');
+
+  if(view==='ws'){
+    var html='';
+    WS_ORDER.forEach(function(ws){
+      var wsRows=data.filter(function(d){return d.ws===ws;});
+      if(!wsRows.length)return;
+      var meta=WS_META[ws];
+      var wsH=0,wsNet=0,wsGross=0,wsCost=0,wsFR=0;
+      wsRows.forEach(function(d){wsH+=d.hours;wsNet+=d.net;wsGross+=d.gross;wsCost+=d.cost;wsFR+=d.fmva_rev;});
+      var wsMar=wsNet-wsCost,wsPct=wsNet>0?wsMar/wsNet*100:null,wsFM=wsFR-wsCost;
+      var bl=BILL_WS.indexOf(ws)>=0;
+      var statH=bl?
+        '<div class="ws-stat"><div class="ws-stat-lbl">Net fees</div><div class="ws-stat-val">'+fM(wsNet)+'</div></div>'+
+        '<div class="ws-stat"><div class="ws-stat-lbl">Cost</div><div class="ws-stat-val">'+fM(wsCost)+'</div></div>'+
+        '<div class="ws-stat"><div class="ws-stat-lbl">Margin</div><div class="ws-stat-val '+mc(wsPct)+'">'+fP(wsPct)+'</div></div>'+
+        '<div class="ws-stat"><div class="ws-stat-lbl">FMVA Rev</div><div class="ws-stat-val" style="color:#4A2080">'+fM(wsFR)+'</div></div>':
+        '<div class="ws-stat"><div class="ws-stat-lbl">Cost</div><div class="ws-stat-val">'+fM(wsCost)+'</div></div>'+
+        '<div class="ws-stat"><div class="ws-stat-lbl">Fees</div><div class="ws-stat-val na">$0</div></div>';
+      var wsId=ws.replace(/\s/g,'_');
+      var body='';
+      sortRows(wsRows).forEach(function(d,idx){
+        var isModified=!!d.ov;
+        var origH=d.origHours!==undefined?d.origHours:d.hours;
+        var hrsDisp=fH(d.hours)+(isModified&&d.ov&&d.ov.hours!==undefined&&parseFloat(d.ov.hours)!==origH?'<span class="edit-modified">edited</span>':'');
+        var discDisp=d.billable?(isModified&&d.ov&&d.ov.disc!==undefined?'<span style="color:var(--dl-green)">'+Math.round(d.ov.disc)+'%</span>':Math.round(disc*100)+'%'):'—';
+        var cb=d.cohort==='USI'?'<span class="badge bu">USI</span>':'<span class="badge bc">US Core</span>';
+        var fn=(d.cohort==='USI'&&d.billable)?'<span class="flat">FLAT</span>':'';
+        var br=d.bill>0?fF(d.bill)+'/hr'+fn:'$0/hr';
+        var rm=d.net-d.cost;
+        var md=d.billable?fP(d.pct):fF(rm);
+        var uid=wsId+'_'+idx;
+        var hasWks=Object.keys(d.weeks).some(function(k){return d.weeks[k].hours!==0;});
+        body+='<tr class="p-row'+(hasWks?' has-weeks':'')+(isModified?' modified':'')+'" id="tr-'+uid+'" data-uid="'+uid+'">';
+        body+='<td style="font-weight:700">'+d.name+(d.billable?'<span class="edit-icon" data-edit="'+uid+'" title="Edit hours &amp; discount">&#9998;</span>':'')+'</td>';
+        body+='<td class="dim" style="font-size:12px">'+d.level+'</td>';
+        body+='<td>'+cb+'</td>';
+        body+='<td class="r">'+hrsDisp+'</td>';
+        body+='<td class="r dim">'+br+'</td>';
+        body+='<td class="r dim">$'+d.cost_rate.toLocaleString()+'/hr</td>';
+        body+='<td class="r dim">'+(d.gross>0?fF(d.gross):'$0')+'</td>';
+        body+='<td class="r" style="font-weight:700">'+(d.net>0?fF(d.net):'$0')+'</td>';
+        body+='<td class="r dim">'+fF(d.cost)+'</td>';
+        body+='<td class="r '+mc(d.billable?d.pct:null)+'">'+md+'&nbsp;<span style="font-size:10px;color:var(--dl-muted)">'+discDisp+'</span></td>';
+        body+='<td class="fv">'+(d.billable?fF(d.fmva_rev):'$0')+'</td>';
+        body+='<td class="fv">'+(d.billable?fF(d.fmva_margin):'—')+'</td>';
+        body+='</tr>';
+        if(d.billable&&!d.isSubcontract){
+          var curHrs=(d.ov&&d.ov.hours!==undefined)?d.ov.hours:origH;
+          var curDisc=(d.ov&&d.ov.disc!==undefined)?d.ov.disc:Math.round(disc*100);
+          var origLabel=d.ov&&d.ov.hours!==undefined?'(orig: '+fH(origH)+')':'';
+          var resetBtn=isModified?'<button class="edit-reset" data-resetname="'+d.name+'" data-resetws="'+d.ws+'">Reset person</button>':'';
+          body+='<tr class="edit-row" id="edit-'+uid+'" style="display:none"><td colspan="12">';
+          body+='<div class="edit-panel">';
+          body+='<span class="edit-hint">Editing: <strong>'+d.name+'</strong></span>';
+          body+='<div class="edit-sep"></div>';
+          body+='<div class="edit-field"><span class="edit-lbl">Hours</span>';
+          body+='<input class="edit-input" type="number" id="hrsinp-'+uid+'" value="'+curHrs+'" min="0" step="0.5" data-name="'+d.name+'" data-ws="'+d.ws+'" data-field="hours">';
+          body+='<span class="edit-unit">hrs</span>';
+          body+=(origLabel?'<span style="font-size:10px;color:var(--dl-muted)">'+origLabel+'</span>':'');
+          body+='</div>';
+          body+='<div class="edit-sep"></div>';
+          body+='<div class="edit-field"><span class="edit-lbl">Discount rate</span>';
+          body+='<input class="edit-input" type="number" id="discinp-'+uid+'" value="'+curDisc+'" min="0" max="100" step="1" data-name="'+d.name+'" data-ws="'+d.ws+'" data-field="disc">';
+          body+='<span class="edit-unit">%</span></div>';
+          body+=(isModified?'<div class="edit-sep"></div>'+resetBtn:'');
+          body+='</div></td></tr>';
+        }
+        if(hasWks) body+=buildWeekRows(d.weeks,8,'wk-row',uid);
+      });
+      if(wsRows.length>1){
+        var stId=wsId+'_sub';
+        var mWks=mergeWeeks(wsRows);
+        body+='<tr class="sub-row" id="tr-'+stId+'" data-uid="'+stId+'">';
+        body+='<td>Subtotal</td><td></td><td></td><td class="r">'+fH(wsH)+'</td><td></td><td></td>';
+        body+='<td class="r">'+fF(wsGross)+'</td><td class="r">'+fF(wsNet)+'</td><td class="r">'+fF(wsCost)+'</td>';
+        body+='<td class="r '+mc(bl?wsPct:null)+'">'+(bl?fP(wsPct):fF(wsMar))+'</td>';
+        body+='<td class="fv">'+(bl?fF(wsFR):'$0')+'</td><td class="fv">'+(bl?fF(wsFM):'—')+'</td></tr>';
+        body+=buildWeekRows(mWks,8,'wks-row',stId);
+      }
+      html+='<div class="ws-section" id="ws-'+wsId+'">';
+      html+='<div class="ws-hdr" onclick="toggleWs(\'ws-'+wsId+'\')">';
+      html+='<div class="wsl"><span class="ws-tag '+meta.tag+'">'+meta.short+'</span><span class="ws-name">'+meta.label+'</span><span class="ws-hrs">'+fH(wsH)+' hrs</span></div>';
+      html+='<div class="wsr">'+statH+'<span class="chev">▼</span></div></div>';
+      html+='<div class="ws-body"><table>';
+      html+='<thead><tr><th>Name</th><th>Level</th><th>Cohort</th><th class="r">Hours</th><th class="r">Bill rate</th><th class="r">Cost rate</th><th class="r">Gross fees</th><th class="r">Net fees</th><th class="r">Cost</th><th class="r">Margin</th><th class="r fc">FMVA Revenue</th><th class="r fc">FMVA Margin</th></tr></thead>';
+      html+='<tbody>'+body+'</tbody></table></div></div>';
+    });
+    var mct=mc(totPct);
+    html+='<div class="grand-total"><div class="gt-lbl">Total — all workstreams</div><div class="gt-stats">'+
+      '<div class="gt-stat"><div class="l">Gross fees</div><div class="v">'+fF(totGross)+'</div></div>'+
+      '<div class="gt-stat"><div class="l">Net fees</div><div class="v">'+fF(totNet)+'</div></div>'+
+      '<div class="gt-stat"><div class="l">Total cost</div><div class="v">'+fF(totCost)+'</div></div>'+
+      '<div class="gt-stat"><div class="l">Net margin $</div><div class="v '+mct+'">'+fF(totMar)+'</div></div>'+
+      '<div class="gt-stat"><div class="l">Net margin %</div><div class="v '+mct+'">'+fP(totPct)+'</div></div>'+
+      '<div class="gt-stat"><div class="l">FMVA Revenue</div><div class="v fv">'+fF(totFR)+'</div></div>'+
+      '<div class="gt-stat"><div class="l">FMVA Margin</div><div class="v fv">'+fF(totFM)+'</div></div>'+
+      '</div></div>';
+    content.innerHTML=html;
+    document.querySelectorAll('[data-uid]').forEach(function(el){
+      var uid=el.getAttribute('data-uid');
+      el.addEventListener('click',function(e){if(e.target.getAttribute('data-edit')||e.target.getAttribute('data-resetname'))return;toggleRow(uid);});
+    });
+    document.querySelectorAll('[data-edit]').forEach(function(el){
+      el.addEventListener('click',function(e){e.stopPropagation();toggleEdit(el.getAttribute('data-edit'),e);});
+    });
+    document.querySelectorAll('.edit-input').forEach(function(inp){
+      inp.addEventListener('change',function(){setOverride(inp.getAttribute('data-name'),inp.getAttribute('data-ws'),inp.getAttribute('data-field'),inp.value);});
+    });
+    document.querySelectorAll('[data-resetname]').forEach(function(btn){
+      btn.addEventListener('click',function(e){e.stopPropagation();resetOverride(btn.getAttribute('data-resetname'),btn.getAttribute('data-resetws'));});
+    });
+    Object.keys(editOpen).forEach(function(uid){if(editOpen[uid]){var p=document.getElementById('edit-'+uid);if(p)p.style.display='';}});
+
+  } else {
+    var people={};
+    data.forEach(function(d){if(!people[d.name])people[d.name]={name:d.name,level:d.level,cohort:d.cohort,rows:[]};people[d.name].rows.push(d);});
+    var sorted=Object.values(people).sort(function(a,b){
+      var ac=a.cohort==='USI'?1:0,bc=b.cohort==='USI'?1:0;
+      if(ac!==bc)return ac-bc;
+      var al=LEVEL_ORDER.indexOf(a.level);if(al<0)al=99;
+      var bl=LEVEL_ORDER.indexOf(b.level);if(bl<0)bl=99;
+      if(al!==bl)return al-bl;
+      var ah=a.rows.filter(function(r){return r.billable;}).reduce(function(s,r){return s+r.hours;},0);
+      var bh=b.rows.filter(function(r){return r.billable;}).reduce(function(s,r){return s+r.hours;},0);
+      return bh-ah;
+    });
+    function wsH(ws){return data.filter(function(d){return d.ws===ws;}).reduce(function(s,d){return s+d.hours;},0);}
+    var body='';
+    sorted.forEach(function(p,pidx){
+      var byWs={};
+      p.rows.forEach(function(r){byWs[r.ws]=(byWs[r.ws]||0)+r.hours;});
+      var pNet=0,pCost=0,pFR=0;
+      p.rows.forEach(function(r){if(r.billable){pNet+=r.net;pFR+=r.fmva_rev;}pCost+=r.cost;});
+      var pMar=pNet-pCost,pPct=pNet>0?pMar/pNet*100:null,pFM=pFR-pCost;
+      var totH=p.rows.reduce(function(s,r){return s+r.hours;},0);
+      var cb=p.cohort==='USI'?'<span class="badge bu">USI</span>':'<span class="badge bc">US Core</span>';
+      var mWks=mergeWeeks(p.rows);
+      var hasWks=Object.values(mWks).some(function(v){return v.hours!==0;});
+      var pvMod=p.rows.some(function(r){return !!r.ov;});
+      var uid='pv_'+pidx;
+      body+='<tr class="p-row'+(hasWks?' has-weeks':'')+(pvMod?' modified':'')+'" id="tr-'+uid+'" data-uid="'+uid+'">';
+      body+='<td style="font-weight:700">'+p.name+' <span class="edit-icon" data-pvhint="1" title="Switch to Workstream view to edit">&#9998;</span></td>';
+      body+='<td class="dim" style="font-size:12px">'+p.level+'</td><td>'+cb+'</td>';
+      body+='<td class="r">'+(byWs['FDD']?fH(byWs['FDD']):'—')+'</td>';
+      body+='<td class="r">'+(byWs['Tax Diligence']?fH(byWs['Tax Diligence']):'—')+'</td>';
+      body+='<td class="r">'+(byWs['Tax Structuring']?fH(byWs['Tax Structuring']):'—')+'</td>';
+      body+='<td class="r dim">'+(byWs['Non-Billable']?fH(byWs['Non-Billable']):'—')+'</td>';
+      body+='<td class="r" style="font-weight:700">'+fH(totH)+'</td>';
+      body+='<td class="r" style="font-weight:700">'+(pNet>0?fF(pNet):'$0')+'</td>';
+      body+='<td class="r dim">'+fF(pCost)+'</td>';
+      body+='<td class="r '+mc(pPct)+'">'+fP(pPct)+'</td>';
+      body+='<td class="fv">'+(pFR>0?fF(pFR):'$0')+'</td>';
+      body+='<td class="fv">'+(pFR>0?fF(pFM):'—')+'</td></tr>';
+      if(hasWks) body+=buildWeekRows(mWks,10,'wk-row',uid);
+    });
+    var tMWks=mergeWeeks(data);
+    var tid='pv_total';
+    body+='<tr class="sub-row" id="tr-'+tid+'" data-uid="'+tid+'">';
+    body+='<td>Total</td><td></td><td></td>';
+    body+='<td class="r">'+fH(wsH('FDD'))+'</td>';
+    body+='<td class="r">'+fH(wsH('Tax Diligence'))+'</td>';
+    body+='<td class="r">'+fH(wsH('Tax Structuring'))+'</td>';
+    body+='<td class="r">'+fH(wsH('Non-Billable'))+'</td>';
+    body+='<td class="r">'+fH(data.reduce(function(s,d){return s+d.hours;},0))+'</td>';
+    body+='<td class="r">'+fF(totNet)+'</td><td class="r">'+fF(totCost)+'</td>';
+    body+='<td class="r '+mc(totPct)+'">'+fP(totPct)+'</td>';
+    body+='<td class="fv">'+fF(totFR)+'</td><td class="fv">'+fF(totFM)+'</td></tr>';
+    body+=buildWeekRows(tMWks,10,'wks-row',tid);
+    content.innerHTML='<div class="ptw"><div style="overflow-x:auto"><table><thead><tr>'+
+      '<th>Name</th><th>Level</th><th>Cohort</th>'+
+      '<th class="r">FDD</th><th class="r">Tax Dilig.</th><th class="r">Tax Struct.</th><th class="r">Non-Bill.</th>'+
+      '<th class="r">Total hrs</th><th class="r">Net fees</th><th class="r">Total cost</th><th class="r">Margin %</th>'+
+      '<th class="r fc">FMVA Revenue</th><th class="r fc">FMVA Margin</th>'+
+      '</tr></thead><tbody>'+body+'</tbody></table></div></div>';
+    document.querySelectorAll('[data-uid]').forEach(function(el){
+      var uid=el.getAttribute('data-uid');
+      el.addEventListener('click',function(){toggleRow(uid);});
+    });
+  }
+}
+
+function toggleWs(id){document.getElementById(id).classList.toggle('collapsed');}
+
+  // Public API
+  return {
+    init: function() {
+      // Reset state on each mount
+      overrides = {};
+      openRows = {};
+      editOpen = {};
+      render();
+    },
+    destroy: function() {
+      // nothing needed — DOM is replaced on next mount
+    }
+  };
+})();
+
+</script>
+
+</body></html>
